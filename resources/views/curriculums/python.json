@@ -1,0 +1,71 @@
+{
+    "Introduction": [
+        "Python Introduction",
+        "Features and Applicaions of Python",
+        "Python Installation"
+    ],
+    "Preliminaries": [
+        "Keywords and Identifiers",
+        "Statements and Comments",
+        "Variables",
+        "Operators",
+        "Python IO and Import",
+        "Python Namespace"
+    ],
+    "Flow Control": [
+        "If and Else",
+        "Loops",
+        "Break and Continue",
+        "Pass"
+    ],
+    "Data Types": [
+        "Data Types",
+        "Numbers",
+        "String",
+        "List",
+        "Tuple",
+        "Set",
+        "Dictionary"
+    ],
+    "Functions": [
+        "Functions",
+        "Function Arguments",
+        "Python Recursion",
+        "Anonymous or Lambda Function",
+        "Global Local and Nonlocal Functions",
+        "Global Keyword"
+    ],
+    "Modules": [
+        "Python Modules",
+        "Datetime Module",
+        "Math Module",
+        "OS Module",
+        "Sys Module"
+    ],
+    "Packages": [
+        "Python Packages",
+        "Python PIP",
+        "Python JSON",
+        "Python RegEx"
+    ],
+    "Exception Handling": [
+        "Exception and its Types",
+        "Exception Handling"
+    ],
+    "File Handling": [
+        "File Handling",
+        "Python Directory"
+    ],
+    "Arrays": [
+        "Arrays",
+        "Array Operations"
+    ],
+    "Python OOPs": [
+        "OOPs Concepts",
+        "Class and Object",
+        "Constructors",
+        "Inheritance ",
+        "Abstraction",
+        "Operator Overloading"
+    ]
+}
