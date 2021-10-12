@@ -21,3 +21,4 @@ Route::view('legal', 'index');
 
 // Courses routes
 @include "courses/c.php";
+@include "courses/python.php";

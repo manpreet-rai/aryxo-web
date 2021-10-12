@@ -1,0 +1,55 @@
+{
+    "Introduction": [
+        "Introduction to C",
+        "Installation process",
+        "Running C code"
+    ],
+    "Preliminaries": [
+        "Keywords and Identifiers",
+        "Variables and Constants",
+        "Data Types",
+        "Operators"
+    ],
+    "Control Flow": [
+        "If and Else",
+        "Switch Cases",
+        "For Loop",
+        "While Loop",
+        "Break and Continue",
+        "Goto"
+    ],
+    "Functions": [
+        "Fruitless Functions",
+        "Function Arguments",
+        "Fruitful Functions",
+        "Recursion",
+        "Storage Class"
+    ],
+    "Arrays": [
+        "Single Dimensional Array",
+        "Multi Dimensional Array",
+        "Array and Functions"
+    ],
+    "Pointers": [
+        "Pointers",
+        "Functions and Pointers",
+        "Arrays and Pointers",
+        "Memory Management in C"
+    ],
+    "Struct and Unions": [
+        "Structs",
+        "Structs and Pointers",
+        "Unions",
+        "Unions and Pointers"
+    ],
+    "Input and Output": [
+        "Console Input and Output",
+        "File Handling",
+        "Command Line Arguments"
+    ],
+    "Reference": [
+        "Preprocessor Directives",
+        "String Handling",
+        "Math Operations"
+    ]
+}

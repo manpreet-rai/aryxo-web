@@ -4,7 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        @yield('title')
+        <!-- SEO Head -->
+        @yield('seo-head')
 
         <!-- Favicons -->
         <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/icon180.png">
@@ -138,6 +139,9 @@
                 </div>
             </div>
         </nav>
+
+        <!-- SEO Body -->
+        @yield('seo-body')
 
         <!-- Contents -->
         @yield('content')
