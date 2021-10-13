@@ -41,7 +41,7 @@
             <!-- Course Logo -->
             <div class="flex justify-center items-center pb-8">
                 <div class="bg-gray-100 dark:bg-gray-800 shadow-md p-8 rounded-full">
-                    {!! $logo !!}
+                    @include('logos.'.$course)
                 </div>
             </div>
 
