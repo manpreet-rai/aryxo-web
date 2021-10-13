@@ -17,7 +17,7 @@ Route::get('c', function () {
              </svg>";
 
     $titles = json_decode(file_get_contents(resource_path('views/curriculums/c.json')), true);
-    return view('courses.c', ['course' => 'c', 'logo' => $logo, 'titles' => $titles]);
+    return view('curriculum', ['course' => 'c', 'logo' => $logo, 'titles' => $titles, 'seo' => 'seo.c']);
 });
 
 Route::get('python', function () {
@@ -27,5 +27,5 @@ Route::get('python', function () {
              </svg>";
 
     $titles = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
-    return view('curriculum', ['course' => 'python', 'logo' => $logo, 'titles' => $titles]);
+    return view('curriculum', ['course' => 'python', 'logo' => $logo, 'titles' => $titles, 'seo' => 'seo.python']);
 });

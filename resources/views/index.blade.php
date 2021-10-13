@@ -332,3 +332,5 @@ int main(int argc, char **argv) {
     <!-- Scripts -->
     <script src="{{ asset('js/prism.js') }}"></script>
 @endsection
+
+@include('seo.index')
