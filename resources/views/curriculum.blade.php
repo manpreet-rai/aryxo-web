@@ -74,3 +74,5 @@
     </div>
 
 @endsection
+
+@include($seo)
