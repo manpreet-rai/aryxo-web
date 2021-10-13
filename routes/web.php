@@ -14,7 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'index');
-Route::view('legal', 'index');
 
 // Curriculum routes
 @include "curriculum.php";
