@@ -1,9 +1,5 @@
 @extends('layout')
 
-@section('title')
-    <title>Aryxo</title>
-@endsection
-
 @section('styles')
     <link id="prismjs" rel="stylesheet">
 @endsection

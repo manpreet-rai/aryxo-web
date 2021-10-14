@@ -154,8 +154,9 @@
                 </div>
 
                 <div class="flex flex-1 justify-center md:justify-start divide-x divide-gray-500 dark:divide-gray-400 md:ml-6">
-                    <a href="/privacy" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">Privacy Policy</a>
-                    <a href="/terms" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">Terms of Use</a>
+                    <a href="/about-us" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">About Us</a>
+                    <a href="/privacy-policy" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">Privacy Policy</a>
+                    <a href="/terms-of-use" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">Terms of Use</a>
                     <a href="/legal" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">Legal</a>
                     <a href="/sitemap" class="text-sm md:text-md text-gray-700 dark:text-gray-400 px-2 hover:underline">Site Map</a>
                 </div>
