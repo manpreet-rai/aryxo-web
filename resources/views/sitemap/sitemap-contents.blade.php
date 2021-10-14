@@ -1,7 +1,7 @@
 @section('content')
     <div class="bg-gray-50 dark:bg-gray-800 select-none py-12">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
-            <p class="text-yellow-900 dark:text-gray-300 text-xl font-medium pb-2">About Us</p>
+            <p class="text-yellow-900 dark:text-gray-300 text-xl font-medium pb-2">Aryxo</p>
             <div class="flex flex-col md:flex-row flex-wrap">
                 <a href="/about-us" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">About Us</a>
                 <a href="/privacy-policy" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">Privacy Policy</a>
@@ -15,7 +15,7 @@
             <p class="text-yellow-900 dark:text-gray-300 text-xl font-medium pb-2">Courses</p>
             <div class="flex flex-col md:flex-row flex-wrap">
                 <a href="/c" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">C</a>
-                <a href="/cpp" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">CPP</a>
+                <a href="/cpp" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">C++</a>
                 <a href="/java" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">Java</a>
                 <a href="/python" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">Python</a>
                 <a href="/html" class="text-gray-800 dark:text-gray-400 pb-2 w-full md:w-1/3 hover:underline">HTML</a>
