@@ -5,12 +5,12 @@
 @endsection
 
 @section('content')
-    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center select-none py-20 lg:h-screen50 flex flex-col items-center justify-center">
+    <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center py-20 lg:h-screen50 flex flex-col items-center justify-center">
         <p class="text-4xl sm:text-5xl lg:text-7xl dm-serif font-normal">Learn what's best for you. Free.</p>
         <p class="text-lg sm:text-xl lg:text-2xl py-4">No hidden costs. It's just a love affair with programming.</p>
     </div>
 
-    <div class="select-none pb-10 lg:pb-0">
+    <div class="pb-10 lg:pb-0">
         <img class="w-full h-auto" id="hero" src="{{ asset('./assets/hero_dark.svg') }}" alt="Aryxo Campus" />
     </div>
 
@@ -27,7 +27,7 @@
         </defs>
     </svg>
 
-    <div class="bg-gray-50 select-none py-20">
+    <div class="bg-gray-50 py-20">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
             <h1 class="text-site text-2xl sm:text-3xl lg:text-5xl dm-serif font-normal">How it works?</h1>
             <p class="text-siteLite text-md sm:text-lg lg:text-xl py-6">
@@ -113,8 +113,8 @@
     </svg>
 
     <!-- C -->
-    <div class="bg-site select-none py-12 sm:py-24 py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn C</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for performance computing</p>
@@ -140,8 +140,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- C++ -->
-    <div class="bg-site select-none py-12 sm:py-24 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn C++</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for gaming and software</p>
@@ -168,8 +168,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- Java -->
-    <div class="bg-site select-none py-12 sm:py-24 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn Java</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for enterprise grade software</p>
@@ -194,8 +194,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- Python -->
-    <div class="bg-site select-none py-12 sm:py-24 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn Python</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for AI and everything</p>
@@ -216,8 +216,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- HTML -->
-    <div class="bg-site select-none py-12 sm:py-24 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn HTML</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for creating websites</p>
@@ -247,8 +247,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- CSS -->
-    <div class="bg-site select-none py-12 sm:py-24 lg:py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn CSS</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for styling websites</p>
@@ -274,8 +274,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- JS -->
-    <div class="bg-site select-none py-12 sm:py-24 py-32">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 select-none flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
+    <div class="bg-site py-12 sm:py-24 py-32">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn JS</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for controlling websites</p>

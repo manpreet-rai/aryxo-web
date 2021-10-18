@@ -92,8 +92,8 @@
         @yield('seo-body')
 
         <!-- Footer -->
-        <div class="bg-site select-none lg:py-4 source-sans">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 select-none border-t border-siteLite flex gap-y-2 md:gap-y-0 flex-col-reverse md:flex-row md:justify-between">
+        <div class="bg-site lg:py-4 source-sans">
+            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 border-t border-siteLite flex gap-y-2 md:gap-y-0 flex-col-reverse md:flex-row md:justify-between">
                 <div class="flex justify-center md:justify-start">
                     <span class="text-xs md:text-sm text-white">Copyright © {{ date('Y') }} Aryxo. All rights reserved.</span>
                 </div>
