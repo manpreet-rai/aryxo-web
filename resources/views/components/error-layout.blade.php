@@ -55,7 +55,7 @@
             </div>
 
             <div class="px-8 py-4 mt-12">
-                <h1 class="text-gray-600 dark:text-gray-400 text-lg md:text-xl saira-condensed text-center">{{ \Illuminate\Foundation\Inspiring::quote() }}</h1>
+                <h1 class="text-gray-600 dark:text-gray-400 text-lg md:text-xl dm-serif text-center">{{ \Illuminate\Foundation\Inspiring::quote() }}</h1>
             </div>
         </div>
     </div>

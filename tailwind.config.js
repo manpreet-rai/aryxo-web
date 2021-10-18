@@ -7,19 +7,22 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {
-        fill: {
+        colors: {
+            transparent: 'transparent',
             current: 'currentColor',
-        },
-        stroke: {
-            current: 'currentColor',
+            site: '#001E26',
+            siteLite: '#003543',
+            gem: '#379761'
         },
         transitionProperty: 'hover',
     },
   },
   variants: {
-    extend: {},
+    extend: {
+        scrollbar: ['dark', 'rounded']
+    },
   },
   plugins: [
-      require('@tailwindcss/typography'),
+      require('tailwind-scrollbar'),
   ],
 }
