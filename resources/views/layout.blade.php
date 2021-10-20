@@ -29,15 +29,16 @@
                 font-family: 'DM Sans', sans-serif;
             }
         </style>
-
     </head>
 
     <body class="antialiased relative d-body-bg d-body-text-color root-text d-scrollbar scrollbar-thin scrollbar-thumb-rounded">
         <!-- Navbar -->
-        <nav class="sticky top-0 d-header z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
+        <header class="sticky top-0 d-header z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
             <div class="flex items-center max-w-7xl mx-auto px-2 md:px-6 lg:px-8 h-16">
                 <div class="flex justify-between md:hidden w-full">
-                    <button id="menuButton" aria-label="menuButton" class="h-12 w-12 flex justify-center items-center">
+                    <button id="menuButton" aria-label="menuButton" class="h-12 w-12 flex justify-center items-center" onclick="function toggleMenu(){
+                        document.getElementById('menu-mobile').classList.toggle('hidden');
+                    } toggleMenu();">
                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
                             <path d="M4 6H20M4 12H20M4 18C5.36683 18 6.13317 18 7.5 18C8.86683 18 11 18 11 18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
@@ -66,13 +67,13 @@
                     </a>
 
                     <div class="flex justify-center items-center">
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/c">C</a>
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/cpp">C++</a>
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/java">Java</a>
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/python">Python</a>
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/html">HTML</a>
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/csstyles">CSS</a>
-                        <a class="flex font-medium group whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/javascript">JS</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/c">C</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/cpp">C++</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/java">Java</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/python">Python</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/html">HTML</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/csstyles">CSS</a>
+                        <a class="flex font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/javascript">JS</a>
                     </div>
 
                     <button id="searchButton" aria-label="searchButton" class="h-12 w-12 flex justify-center items-center">
@@ -83,7 +84,7 @@
                     </button>
                 </div>
             </div>
-        </nav>
+        </header>
 
         <!-- Contents -->
         @yield('content')
@@ -92,7 +93,7 @@
         @yield('seo-body')
 
         <!-- Footer -->
-        <div class="bg-site lg:py-4 source-sans">
+        <footer class="bg-site lg:py-4 source-sans">
             <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 border-t border-siteLite flex gap-y-2 md:gap-y-0 flex-col-reverse md:flex-row md:justify-between">
                 <div class="flex justify-center md:justify-start">
                     <span class="text-xs md:text-sm text-white">Copyright © {{ date('Y') }} Aryxo. All rights reserved.</span>
@@ -144,6 +145,37 @@
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.97553 0C3.57186 0 0 3.57187 0 7.97553C0 11.4985 2.29969 14.4832 5.43119 15.5596C5.82263 15.6086 5.96942 15.3639 5.96942 15.1682C5.96942 14.9725 5.96942 14.4832 5.96942 13.7982C3.76758 14.2875 3.27829 12.7217 3.27829 12.7217C2.93578 11.792 2.39755 11.5474 2.39755 11.5474C1.66361 11.0581 2.44648 11.0581 2.44648 11.0581C3.22936 11.107 3.66972 11.8899 3.66972 11.8899C4.40367 13.1131 5.52905 12.7706 5.96942 12.5749C6.01835 12.0367 6.263 11.6942 6.45872 11.4985C4.69725 11.3028 2.83792 10.6177 2.83792 7.53517C2.83792 6.65443 3.1315 5.96942 3.66972 5.38226C3.62079 5.23547 3.32722 4.40367 3.76758 3.32722C3.76758 3.32722 4.4526 3.1315 5.96942 4.15902C6.6055 3.9633 7.29052 3.91437 7.97553 3.91437C8.66055 3.91437 9.34557 4.01223 9.98165 4.15902C11.4985 3.1315 12.1835 3.32722 12.1835 3.32722C12.6239 4.40367 12.3303 5.23547 12.2813 5.43119C12.7706 5.96942 13.1131 6.70336 13.1131 7.5841C13.1131 10.6667 11.2538 11.3028 9.49235 11.4985C9.78593 11.7431 10.0306 12.2324 10.0306 12.9664C10.0306 14.0428 10.0306 14.8746 10.0306 15.1682C10.0306 15.3639 10.1774 15.6086 10.5688 15.5596C13.7492 14.4832 16 11.4985 16 7.97553C15.9511 3.57187 12.3792 0 7.97553 0Z" />
                         </svg>
                     </a>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cookie Consent Box
+        <div class="cookie-consent h-16 py-4 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center md:justify-between space-y-4 md:space-y-0">
+            Cookie Consent
+        </div>
+        -->
+
+        <div id="menu-mobile" class="hidden md:hidden w-full fixed top-0 d-menu z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
+            <div class="flex flex-col pt-4 w-4/5 h-screen bg-white dark:bg-siteLite">
+                <div class="flex w-full justify-end pr-4">
+                    <button class="h-12 w-12 flex justify-center items-center" onclick="function toggleMenu(){
+                        document.getElementById('menu-mobile').classList.toggle('hidden');
+                    } toggleMenu();">
+                        <svg class="h-5 w-5" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3L67 67" stroke="currentColor" stroke-width="6"/>
+                            <path d="M67 3L3 67" stroke="currentColor" stroke-width="6"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="p-8 space-y-2">
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/c">C</a>
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/cpp">C++</a>
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/java">Java</a>
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/python">Python</a>
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/html">HTML</a>
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/csstyles">CSS</a>
+                    <a class="flex text-lg font-semibold whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/javascript">JS</a>
                 </div>
             </div>
         </div>

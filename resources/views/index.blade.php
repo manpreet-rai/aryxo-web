@@ -1,6 +1,16 @@
 @extends('layout')
 
 @section('custom-head')
+    <script>
+        let localstorage = window.localStorage;
+        window.onload = function () {
+            let cookieConsent = document.getElementById('cookie-consent');
+            if (localstorage.getItem('cookies-access') !== 'true') {
+                let footer = document.getElementsByTagName('footer');
+                footer.style = 'margin-bottom: 4rem';
+            }
+        }
+    </script>
     <link rel="stylesheet" href="{{ asset('css/prism-dark.css') }}">
 @endsection
 
@@ -14,7 +24,7 @@
         <img class="w-full h-auto" id="hero" src="{{ asset('./assets/hero_dark.svg') }}" alt="Aryxo Campus" />
     </div>
 
-    <svg class="w-full h-auto" viewBox="0 0 1440 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="w-full h-auto" viewBox="0 0 1440 240" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_2:848)">
             <rect class="text-gray-50 fill-current" x="-14" y="-21" width="1477" height="291" />
             <path class="text-gray-50 dark:text-siteLite fill-current" d="M188.857 204.044L192.759 208.018L204.021 215.864C208.25 218.81 213.83 219.618 218.759 218.33C228.21 215.861 242.78 212.453 243.758 212.984C244.355 213.309 245.988 214.95 247.932 216.902C250.572 219.554 253.784 222.781 255.748 224.065L267.419 229.987C270.803 231.489 274.718 230.697 277.324 227.985L277.97 227.312L282.398 222.44L290.201 220.868C290.984 220.71 291.707 220.321 292.286 219.747L296.5 215.564C298.342 213.736 301.197 213.637 303.151 215.333L303.741 215.845C305.071 216.999 306.942 217.178 308.449 216.295L314.101 212.984L323.214 208.018H324.734C328.731 208.018 332.519 206.145 335.059 202.914L336.004 201.713H343.358C347.315 201.713 351.18 202.966 354.445 205.307L357.227 207.301C357.877 207.768 358.648 208.018 359.437 208.018H367.499C368.51 208.018 369.466 207.539 370.1 206.716L376.611 198.275L383.325 201.713L395.635 198.275H408.745L426.983 193.638L446.954 204.197H461.662L476.21 201.713L486.593 212.478C486.906 212.802 487.328 212.984 487.769 212.984H497.793L508.664 220.626L522.413 224.065L534.083 232.47L552.149 240.494C557.552 243.077 563.879 242.296 568.561 238.47L568.985 238.124L599.151 220.626L610.821 212.984L629.52 209.98L640.668 212.984L641.654 214.095C642.913 215.515 645.035 215.593 646.387 214.269L650.348 210.389L657.847 209.98L660.116 211.949C664.73 215.952 670.535 218.143 676.528 218.143L683.562 220.626L698.43 229.605H710.421L729.126 224.065L735.52 218.143L751.667 215.659L755.984 208.018H782.842L792.612 212.285L806.048 226.571C807.828 228.464 810.4 229.29 812.888 228.767L823.122 224.065L835.425 218.143L842.474 226.548L846.623 230.207C848.038 231.456 850.154 231.262 851.341 229.776L855.903 224.065L859.74 215.659L869.534 210.94C871.062 210.204 872.513 209.303 873.862 208.253L879.564 203.815L885.438 205.512C890.884 207.085 896.72 205.818 901.119 202.107L902.266 201.14H907.526C908.972 201.14 910.414 201.031 911.842 200.814L924.042 207.045L924.483 207.368C929.349 210.934 935.706 211.369 940.973 208.495L958.615 199.498L969.852 190.468L983.411 186.285L993.888 178.061L1003.9 177.515C1004.34 177.491 1004.75 177.286 1005.05 176.945L1009.07 172.314L1026.96 167.02L1029.53 167.316L1044.22 166.515L1059.42 157.409L1066.23 155.393L1082.08 158.518L1095.18 157.804L1107.64 160.567L1114.17 156.767L1121.1 164.843C1121.77 165.63 1122.75 166.056 1123.76 166.001L1131.81 165.561C1132.6 165.518 1133.35 165.227 1133.98 164.725L1136.66 162.582C1139.8 160.066 1143.6 158.605 1147.55 158.389L1154.9 157.989L1155.9 159.137C1158.6 162.225 1162.47 163.888 1166.46 163.67L1167.98 163.587L1177.33 168.051L1183.14 171.049C1184.69 171.849 1186.55 171.568 1187.82 170.343L1188.38 169.799C1190.25 168 1193.11 167.943 1195.04 169.668L1199.45 173.615C1200.06 174.157 1200.8 174.506 1201.59 174.621L1209.46 175.767L1214.12 180.391L1214.8 181.027C1217.54 183.594 1221.49 184.171 1224.79 182.486L1236.15 175.936C1238.05 174.547 1241.1 171.15 1243.6 168.358C1245.45 166.302 1247 164.574 1247.58 164.218C1248.53 163.634 1263.25 166.243 1272.81 168.194C1277.8 169.211 1283.33 168.101 1287.4 164.928L1298.26 156.478L1301.96 152.298C1304.39 149.552 1307.38 147.414 1310.71 146.043L1318.43 141.07L1322.55 138.41H1331.08L1337.84 141.07H1346.9L1373.67 166.921C1375.77 168.949 1379.15 168.754 1381 166.498L1392.67 152.298L1403.79 148.913L1412.06 141.07L1421.24 132.085L1427.16 125.354L1433.58 121.027L1440 117.181V72H568.257L360.207 82.234L192.759 81.741L0 82.25V143.619L7.27319 140.528L18.0016 143.607L25.9486 149.231H30.7908L37.5493 152.875L41.3892 156.307L48.2002 159.23L56.942 152.009L61.9646 156.307L66.7109 158.084L73.084 164.397L77.6041 171.089L85.9484 176.912L94.6902 184.4L111.379 198.275L131.736 184.4L163.888 189.184L179.811 198.275C183.201 199.463 186.293 201.434 188.857 204.044V204.044Z" />
@@ -96,7 +106,7 @@
         </div>
     </div>
 
-    <svg class="w-full h-auto" viewBox="0 0 1438 246" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg class="w-full h-auto" viewBox="0 0 1438 240" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_5:856)">
             <rect class="text-gray-50 fill-current" x="-1" y="-71" width="1440" height="317" />
             <path class="text-siteLite fill-current" d="M-0.684788 189.007C6.9534 183.043 22.8359 171.416 29.3831 170.598C32.4469 170.215 37.919 170.118 43.8676 170.014C53.8093 169.839 65.0816 169.64 68.6658 168.041C73.2487 165.997 83.1239 164.123 87.4886 163.442C94.5813 160.035 110.076 153.119 115.314 152.71C117.625 152.529 120.447 150.947 123.924 148.997C130.292 145.425 138.857 140.622 150.504 140.952C161.573 141.267 172.951 145.638 181.596 148.96C187.013 151.041 191.357 152.71 193.879 152.71C197.056 152.71 206.208 149.941 215.629 147.091C225.621 144.067 235.917 140.952 239.708 140.952C243.229 140.952 249.366 137.916 255.887 134.69C263.01 131.167 270.59 127.417 275.717 127.15C279.599 126.948 282.457 123.872 285.758 120.32C290.81 114.883 296.897 108.332 309.271 109.26C320.152 110.075 328.486 111.759 334.644 113.002C340.065 114.097 343.799 114.851 346.098 114.373C347.643 114.051 349.591 113.426 351.792 112.721C356.59 111.182 362.585 109.26 368.195 109.26C371.887 109.26 379.577 105.827 387.808 102.152C397.821 97.682 408.634 92.854 414.024 93.415C418.87 93.92 425.508 90.194 432.464 86.288C439.608 82.278 447.088 78.08 453.307 78.08C455.935 78.08 459.163 78.314 462.854 78.582C476.407 79.565 496.208 81.001 515.504 72.967C526.294 68.474 542.301 58.55 557.758 48.967C577.471 36.746 596.29 25.0793 602.253 25.9388C610.764 27.1655 645.398 46.064 661.651 55.36C665.882 54.858 676.065 54.888 682.947 59.022C686.713 61.283 693.97 66.837 701.219 72.385C710.531 79.511 719.83 86.628 721.701 86.745L721.848 86.754C725.26 86.966 733.187 87.458 744.993 93.603C750.851 96.652 755.981 100.451 760.1 103.502C764.405 106.691 767.605 109.062 769.379 108.903C770.599 108.795 773.717 107.423 777.658 105.691C784.93 102.493 795.003 98.064 801.112 98.064C810.533 98.064 821.442 96.825 832.35 90.012C833.846 89.078 835.36 88.109 836.873 87.14C846.391 81.046 855.838 74.998 860.117 78.08C865.075 81.651 874 86.745 877.471 86.745C877.689 86.745 877.963 86.743 878.284 86.742C883.068 86.72 898.452 86.647 900.775 90.012C901.972 91.746 905.598 93.25 909.865 94.725C921.434 95.559 933.239 97.113 945.358 98.739C946.144 98.695 946.887 98.639 947.583 98.573L953.245 92.334C953.484 92.072 953.88 91.892 954.316 91.846C954.751 91.8 955.176 91.894 955.464 92.1L960.192 95.5L968.286 86.581C968.522 86.316 968.918 86.134 969.356 86.087C969.793 86.041 970.219 86.138 970.505 86.347L979.795 93.014C998.989 88.426 1016.82 82.047 1033.98 75.906L1033.99 75.904C1057.29 67.569 1079.36 59.674 1101.93 57.294C1123.16 55.072 1153.15 60.891 1184.32 66.94C1218.08 73.492 1252.75 83.515 1279.66 80.679C1301.13 78.394 1329.34 76.54 1350.99 66.683C1377.62 62.929 1408.9 46.245 1427.11 44.325C1429.28 44.097 1425.16 44.671 1427.11 44.325C1431.06 43.625 1420.94 44.126 1427.11 44.325L1438.71 184.617V245.993H1398.44C1371.3 245.993 1341.27 245.993 1312.6 245.993H1113.61C1087.67 245.993 1071.8 245.993 1065.14 245.993H953.529C933.562 245.993 910.352 245.993 885.265 245.993H717.337C691.055 245.993 676.89 245.993 661.872 245.993C650.438 245.993 614.088 245.993 598.046 245.993H536.95H464.757C452.176 245.993 441.722 245.993 432.464 245.993C414.929 245.993 377.331 245.993 351.792 245.993H179.455C153.727 245.993 144.791 245.993 131.312 245.993C122.242 245.993 104.422 245.993 90.8589 245.993H43.8676C43.1713 245.993 22.241 245.993 19.4733 245.993H4.78062C4.316 245.993 1.1063 245.993 -0.684878 245.993C-0.684878 242.518 -0.684878 240.255 -0.684878 240.255C-0.804995 239.115 -0.474852 237.976 -0.684878 235.984C-0.926041 233.697 -0.684878 231.858 -0.684788 230.242C-0.684878 228.094 -0.684878 225.706 -0.684772 223.534C-0.684878 219.843 -0.684878 218.685 -0.684878 217.382L-0.684788 213.98C-0.684788 213.98 -0.425876 209.27 -0.684788 206.813V199.937C-0.684788 199.937 -1.39402 189.561 -0.684788 189.007Z" />
@@ -113,10 +123,10 @@
     </svg>
 
     <!-- C -->
-    <div class="bg-site py-12 sm:py-24 py-32">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn C</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn C</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for performance computing</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/c" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
@@ -143,7 +153,7 @@ int main(int argc, char **argv) {
     <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn C++</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn C++</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for gaming and software</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/cpp" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
@@ -171,7 +181,7 @@ int main(int argc, char **argv) {
     <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn Java</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn Java</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for enterprise grade software</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/java" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
@@ -197,7 +207,7 @@ int main(int argc, char **argv) {
     <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn Python</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn Python</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for AI and everything</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/python" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
@@ -219,7 +229,7 @@ int main(int argc, char **argv) {
     <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn HTML</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn HTML</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for creating websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/html" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
@@ -250,7 +260,7 @@ int main(int argc, char **argv) {
     <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn CSS</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn CSS</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for styling websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/css" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
@@ -274,10 +284,10 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- JS -->
-    <div class="bg-site py-12 sm:py-24 py-32">
+    <div class="bg-site py-12 sm:py-24 lg:py-32">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
-                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-8xl">Learn JS</h1>
+                <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn JS</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for controlling websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/javascript" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
