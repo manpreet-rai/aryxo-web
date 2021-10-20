@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// General routes
 Route::view('/', 'index');
+Route::view('sitemap', 'sitemap.sitemap');
 
 // Curriculum routes
 @include "curriculum.php";

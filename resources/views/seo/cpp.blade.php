@@ -1,7 +1,7 @@
 @section('seo-head')
-    <title>Aryxo, c++ programming tutorials, learn c++ programming, learn c and c++ online free, c++ programming website, free online learning c++ programming</title>
-    <meta name="" content="Aryxo, c++ programming tutorials, learn c++ programming, learn c and c++ online free, c++ programming website, free online learning c++ programming" />
-    <meta name="description" content="We provide best programming tutorials, c++ programming tutorials, learn c++ programming, learn c and c++ online free, c++ programming website, free online learning c++ programming" />
+    <title>Aryxo, C++ Programming Tutorials, Learn C++ Programming, Learn C and C++ Online Free, C++ Programming Website, Free Online Learning C++ Programming</title>
+    <meta name="keywords" content="Aryxo, C++ Programming Tutorials, Learn C++ Programming, Learn C and C++ Online Free, C++ Programming Website, Free Online Learning C++ Programming" />
+    <meta name="description" content="We Provide Best Programming Tutorials, C++ Programming Tutorials, Learn C++ Programming, Learn C and C++ Online Free, C++ Programming Website, Free Online Learning C++ Programming" />
     <meta name="author" content="https://www.aryxo.com" />
     <link rel="canonical" href="https://www.aryxo.com" />
     <meta name="robots" content="index, follow" />
@@ -16,10 +16,10 @@
 @endsection
 
 @section('seo-body')
-    <h1 style="display:none;">c++ programming tutorials, learn c++ programming, learn c and c++ online free, c++ programming website, free online learning c++ programming</h1>
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="c++ programming tutorials">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="learn c++ programming">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="learn c and c++ online free">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="c++ programming website">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="free online learning c++ programming">
+    <h1 style="display:none;">C++ Programming Tutorials, Learn C++ Programming, Learn C and C++ Online Free, C++ Programming Website, Free Online Learning C++ Programming</h1>
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="C++ Programming Tutorials">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn C++ Programming">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn C and C++ Online Free">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="C++ Programming Website">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Free Online Learning C++ Programming">
 @endsection

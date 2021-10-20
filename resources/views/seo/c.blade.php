@@ -1,7 +1,7 @@
 @section('seo-head')
-    <title>Aryxo, Learn c online, learn c programming online, learn c and c++ online free, c programming tutorial, learn c language</title>
-    <meta name="" content="Aryxo, Learn c online, learn c programming online, learn c and c++ online free, c programming tutorial, learn c language" />
-    <meta name="description" content="We provide best programming tutorials, Learn c online, learn c programming online, learn c and c++ online free, c programming tutorial, learn c language" />
+    <title>Aryxo, Learn C Online, Learn C Programming Online, Learn C and C++ Online Free, C Programming Tutorial, Learn C Language</title>
+    <meta name="keywords" content="Aryxo, Learn C Online, Learn C Programming Online, Learn C and C++ Online Free, C Programming Tutorial, Learn C Language" />
+    <meta name="description" content="We Provide Best Programming Tutorials, Learn C Online, Learn C Programming Online, Learn C and C++ Online Free, C Programming Tutorial, Learn C Language" />
     <meta name="author" content="https://www.aryxo.com" />
     <link rel="canonical" href="https://www.aryxo.com" />
     <meta name="robots" content="index, follow" />
@@ -16,10 +16,10 @@
 @endsection
 
 @section('seo-body')
-    <h1 style="display:none;">Learn c online, learn c programming online, learn c and c++ online free, c programming tutorial, learn c language</h1>
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn c online">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="learn c programming online">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="learn c and c++ online free">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="c programming tutorial">
-    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="learn c language">
+    <h1 style="display:none;">Learn C Online, Learn C Programming Online, Learn C and C++ Online Free, C Programming Tutorial, Learn C Language</h1>
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn C Online">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn C Programming Online">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn C and C++ Online Free">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="C Programming Tutorial">
+    <img src="https://www.aryxo.com/logo.png" style="display:none;" alt="Learn C Language">
 @endsection
