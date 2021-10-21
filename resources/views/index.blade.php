@@ -11,7 +11,6 @@
             }
         }
     </script>
-    <link rel="stylesheet" href="{{ asset('css/prism-dark.css') }}">
 @endsection
 
 @section('content')
@@ -129,8 +128,8 @@
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn C</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for performance computing</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/c" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/c/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/c" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/c/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 
@@ -156,8 +155,8 @@ int main(int argc, char **argv) {
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn C++</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for gaming and software</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/cpp" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/cpp/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/cpp" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/cpp/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 
@@ -210,8 +209,8 @@ int main(int argc, char **argv) {
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn Python</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for AI and everything</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/python" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/python/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/python" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/python/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 
@@ -232,8 +231,8 @@ int main(int argc, char **argv) {
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn HTML</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for creating websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/html" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/html/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/html" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/html/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 
@@ -263,8 +262,8 @@ int main(int argc, char **argv) {
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn CSS</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for styling websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/css" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/css/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/css" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/css/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 
@@ -290,8 +289,8 @@ int main(int argc, char **argv) {
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn JS</h1>
                 <p class="text-md md:text-lg font-medium text-white">The language for controlling websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/javascript" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/javascript/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/javascript" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/javascript/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 
