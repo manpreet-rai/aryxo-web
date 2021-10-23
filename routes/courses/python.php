@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 | Python Course Routes
 |--------------------------------------------------------------------------
 |
-| Here python course routes are defined.
+| Here Python course routes are defined.
 |
 */
 
@@ -15,8 +15,8 @@ Route::get('python/python-introduction', function () {
     return view('courses.python.python-introduction');
 });
 
-Route::get('python/features-and-applicaions-of-python', function () {
-    return view('courses.python.features-and-applicaions-of-python');
+Route::get('python/features-and-applications-of-python', function () {
+    return view('courses.python.features-and-applications-of-python');
 });
 
 Route::get('python/python-installation', function () {

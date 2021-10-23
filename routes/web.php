@@ -22,3 +22,4 @@ Route::view('sitemap', 'sitemap.sitemap');
 // Courses routes
 @include "courses/c.php";
 @include "courses/python.php";
+@include "courses/html.php";

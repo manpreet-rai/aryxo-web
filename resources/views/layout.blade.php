@@ -36,8 +36,8 @@
         <!-- Navbar -->
         <header class="sticky top-0 d-header z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
             <div class="flex items-center max-w-7xl mx-auto px-2 md:px-6 lg:px-8 h-16">
-                <div class="flex justify-between md:hidden w-full">
-                    <button id="menuButton" aria-label="menuButton" class="h-12 w-12 flex justify-center items-center" onclick="function toggleMenu(){
+                <div class="relative flex md:hidden w-full">
+                    <button id="menuButton" aria-label="menuButton" class="absolute inset-y-0 left-0 h-12 w-12 flex justify-center items-center" onclick="function toggleMenu(){
                         document.getElementById('menu-mobile').classList.toggle('hidden');
                     } toggleMenu();">
                         <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor">
@@ -45,13 +45,15 @@
                         </svg>
                     </button>
 
-                    <a href="/" class="h-12 w-12 flex justify-center items-center">
-                        <svg class="h-8 w-8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-width="6" stroke="#CF0000" fill-rule="evenodd" clip-rule="evenodd" d="M0 512V0H512V512H306.809L279.45 408.82H205.191L175.878 512H101.618L209.099 124.593H273.588L365.435 447.756H445.556V68.1367H66.4429V512H0ZM216.916 340.684H265.771L240.367 262.814L216.916 340.684Z" fill="#AE0000"/>
-                        </svg>
-                    </a>
+                    <div class="flex w-full justify-center">
+                        <a href="/" class="h-12 w-12 flex justify-center items-center">
+                            <svg class="h-8 w-8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-width="6" stroke="#CF0000" fill-rule="evenodd" clip-rule="evenodd" d="M0 512V0H512V512H306.809L279.45 408.82H205.191L175.878 512H101.618L209.099 124.593H273.588L365.435 447.756H445.556V68.1367H66.4429V512H0ZM216.916 340.684H265.771L240.367 262.814L216.916 340.684Z" fill="#AE0000"/>
+                            </svg>
+                        </a>
+                    </div>
 
-                    <div class="flex space-x-2">
+                    <div class="absolute inset-y-0 right-0 flex space-x-2">
                         <button id="searchButtonMobile" aria-label="searchButton" class="h-12 w-12 flex justify-center items-center">
                             <svg class="h-5 w-5" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="28.5" cy="28.5" r="25.5" stroke="currentColor" stroke-width="6"/>
@@ -122,16 +124,16 @@
         @yield('seo-body')
 
         <!-- Footer -->
-        <footer class="d-body-bg d-body-text-color lg:py-4 source-sans">
-            <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-4 border-t border-siteLite dark:border-gray-300 flex gap-y-2 md:gap-y-0 flex-col-reverse md:flex-row md:justify-between">
+        <footer class="max-w-7xl mx-auto px-2 md:px-6 lg:px-8 d-body-bg d-body-text-color lg:py-4 source-sans">
+            <div class="py-4 border-t border-siteLite dark:border-gray-300 flex gap-y-2 md:gap-y-0 flex-col-reverse md:flex-row md:justify-between">
                 <div class="flex justify-center md:justify-start">
                     <span class="text-xs md:text-sm">Copyright © {{ date('Y') }} Aryxo. All rights reserved.</span>
                 </div>
 
                 <div class="flex flex-1 justify-center md:justify-start divide-x divide-siteLite dark:divide-gray-300 md:ml-6">
-                    <a href="/about-us" class="text-xs md:text-sm px-2 hover:underline">About Us</a>
-                    <a href="/privacy-policy" class="text-xs md:text-sm px-2 hover:underline">Privacy Policy</a>
-                    <a href="/terms-of-use" class="text-xs md:text-sm px-2 hover:underline">Terms of Use</a>
+                    <a href="/about" class="text-xs md:text-sm px-2 hover:underline">About Us</a>
+                    <a href="/privacy" class="text-xs md:text-sm px-2 hover:underline">Privacy Policy</a>
+                    <a href="/terms" class="text-xs md:text-sm px-2 hover:underline">Terms of Use</a>
                     <a href="/legal" class="text-xs md:text-sm px-2 hover:underline">Legal</a>
                     <a href="/sitemap" class="text-xs md:text-sm px-2 hover:underline">Site Map</a>
                 </div>
