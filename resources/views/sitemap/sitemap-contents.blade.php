@@ -1,8 +1,8 @@
 @section('content')
     <div class="py-12">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
-            <p class="text-site dark:text-white text-xl font-semibold pb-2">Aryxo</p>
-            <div class="text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
+            <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">Aryxo</p>
+            <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
                 <a href="/about" class="pb-2 w-full md:w-1/3 hover:text-gem">About Us</a>
                 <a href="/privacy" class="pb-2 w-full md:w-1/3 hover:text-gem">Privacy Policy</a>
                 <a href="/terms" class="pb-2 w-full md:w-1/3 hover:text-gem">Terms of Use</a>
@@ -12,8 +12,8 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
-            <p class="text-site dark:text-white text-xl font-semibold pb-2">Courses</p>
-            <div class="text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
+            <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">Courses</p>
+            <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
                 <a href="/c" class="pb-2 w-full md:w-1/3 hover:text-gem">C</a>
                 <a href="/cpp" class="pb-2 w-full md:w-1/3 hover:text-gem">C++</a>
                 <a href="/java" class="pb-2 w-full md:w-1/3 hover:text-gem">Java</a>
@@ -25,8 +25,8 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
-            <p class="text-site dark:text-white text-xl font-semibold pb-2">C</p>
-            <div class="text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
+            <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">C</p>
+            <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
                 <a href="/c/introduction-to-c" class="pb-2 w-full md:w-1/3 hover:text-gem">Introduction to C</a>
                 <a href="/c/installation-process" class="pb-2 w-full md:w-1/3 hover:text-gem">Installation process</a>
                 <a href="/c/running-c-code" class="pb-2 w-full md:w-1/3 hover:text-gem">Running C code</a>
@@ -65,8 +65,8 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
-            <p class="text-site dark:text-white text-xl font-semibold pb-2">Python</p>
-            <div class="text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
+            <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">Python</p>
+            <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
                 <a href="/python/python-introduction" class="pb-2 w-full md:w-1/3 hover:text-gem">Python Introduction</a>
                 <a href="/python/features-and-applications-of-python" class="pb-2 w-full md:w-1/3 hover:text-gem">Features and Applications of Python</a>
                 <a href="/python/python-installation" class="pb-2 w-full md:w-1/3 hover:text-gem">Python Installation</a>
@@ -118,8 +118,8 @@
         </div>
 
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
-            <p class="text-site dark:text-white text-xl font-semibold pb-2">HTML</p>
-            <div class="text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
+            <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">HTML</p>
+            <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
                 <a href="/html/introduction-to-html" class="pb-2 w-full md:w-1/3 hover:text-gem">Introduction to HTML</a>
                 <a href="/html/editors" class="pb-2 w-full md:w-1/3 hover:text-gem">Editors</a>
                 <a href="/html/basic-tags" class="pb-2 w-full md:w-1/3 hover:text-gem">Basic Tags</a>
