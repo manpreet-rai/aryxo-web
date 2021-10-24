@@ -17,7 +17,7 @@
             <div class="px-2 md:px-0 py-4 mt-4 md:mt-6">
                 <h1 class="text-site dark:text-white text-xl md:text-2xl font-semibold">Unit {{ $loop->iteration }}: {{ $heading }}</h1>
 
-                <ul class="text-siteLite dark:text-gray-300 text-md md:text-lg">
+                <ul class="text-siteLite dark:text-gray-300 text-base md:text-lg">
                     @foreach($title as $post)
                         <li><a class="hover:text-gem" href="{{ $course.'/'.Str::slug($post, '-') }}">{{ $post }}</a></li>
                     @endforeach
@@ -36,7 +36,6 @@
                 </span>
             </a>
         </div>
-
     </div>
 @endsection
 

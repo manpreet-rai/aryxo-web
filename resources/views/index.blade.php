@@ -30,7 +30,7 @@
     <div class="bg-gray-50 py-20">
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-center">
             <h1 class="text-site text-2xl sm:text-3xl lg:text-5xl dm-serif font-normal">How it works?</h1>
-            <p class="text-siteLite text-md sm:text-lg lg:text-xl py-6">
+            <p class="text-siteLite text-base sm:text-lg lg:text-xl py-6">
                 We started this project as a way to provide free education for those who are willing to learn but could not afford expensive courses.
                 This initiative targets to add more courses as time progresses, and focuses on clearing doubts about programming languages in general.
             </p>
@@ -45,8 +45,8 @@
                         <path class="text-gem fill-current" d="M90,39.26,296,158.19V534.63l-52,30V188.22l-2-1.16L38,69.28l52-30m0-4.62L30,69.28,240,190.53V571.58l60-34.64V155.88L90,34.64Z"/>
                         <path class="text-white fill-current" d="M80.49,329.44,49.15,296.12v-6.91L80.49,292v6.31l-25.58-2.34,25.58,27.19Zm23.72,32.77,16.58-70.36,5.68,3.28-16.59,70.35Zm46,7.5V363.4l25.57,2.35-25.57-27.19v-6.31l31.42,33.47v6.91Z"/>
                     </svg>
-                    <h2 class="text-md sm:text-lg lg:text-2xl font-semibold text-site">Learn</h2>
-                    <p class="text-md lg:text-lg text-siteLite">
+                    <h2 class="text-base sm:text-lg lg:text-2xl font-semibold text-site">Learn</h2>
+                    <p class="text-base lg:text-lg text-siteLite">
                         We provide in-depth course contents for various programming languages in curriculum fashion to begin with.
                     </p>
                 </div>
@@ -72,8 +72,8 @@
                         <polygon class="text-gem fill-current" points="30.02 138.56 30.02 173.21 450.02 415.69 450.02 381.05 30.02 138.56"/>
                         <polygon class="text-gem fill-current" points="30.03 207.7 30.03 242.34 450.03 484.83 450.03 450.19 30.03 207.7"/>
                     </svg>
-                    <h2 class="text-md sm:text-lg lg:text-2xl font-semibold text-site">Practice</h2>
-                    <p class="text-md lg:text-lg text-siteLite">
+                    <h2 class="text-base sm:text-lg lg:text-2xl font-semibold text-site">Practice</h2>
+                    <p class="text-base lg:text-lg text-siteLite">
                         Our approach involves learn-by-doing. Practice the examples, quizzes and solve the demos to become expert.
                     </p>
                 </div>
@@ -87,8 +87,8 @@
                         <path class="text-gem fill-current" d="M133.23,165.89a31.28,31.28,0,0,1-3.59-1.46,38.72,38.72,0,0,1-3.92-2,29.19,29.19,0,0,1-8.78-7.13,21.82,21.82,0,0,1-3.72-9.62,126.76,126.76,0,0,1-.93-17.86q0-11.74.93-16.62c.66-3.28,1.91-5.08,3.72-5.4s4.79.62,8.78,2.93a42.72,42.72,0,0,1,3.92,2.57,37.3,37.3,0,0,1,3.39,2.72v4.65a61.85,61.85,0,0,0-6.25-4.29q-4.59-2.65-6.45-2.35t-2.46,4.22a130.55,130.55,0,0,0-.53,14.49,150.08,150.08,0,0,0,.53,15.11,14.77,14.77,0,0,0,2.46,7.06,21.89,21.89,0,0,0,6.45,5.1,39.46,39.46,0,0,0,6.45,3Zm6.81,4.23V117.64l21.6,12.48v5L145,125.56v18.38l14.43,8.33v5L145,149v19l16.62,9.59v5Zm49,28.28L183.29,174l-.93-.54-8.58-5v21.13l-5-2.88V134.25l14,8.06a21.39,21.39,0,0,1,7.05,6.05,17.6,17.6,0,0,1,3,7,46.39,46.39,0,0,1,.73,8.89,28.64,28.64,0,0,1-1.06,8.84c-.66,2.06-2.13,2.95-4.39,2.66l6.18,25.69ZM181.49,168c2.08,1.2,3.64,1.72,4.65,1.54a2.38,2.38,0,0,0,1.93-2.16,28,28,0,0,0,.47-6,35.82,35.82,0,0,0-.47-6.52,10,10,0,0,0-1.86-4.36,15,15,0,0,0-4.65-3.83l-7.78-4.49v21.36Zm26,41.11V161.79l-10.17-5.87v-5.19l25.33,14.62v5.19l-10.17-5.87V212Zm21.08,12.17V168.77l5,2.88v52.48ZM243,229.57V177.09L263.6,189v5L248,185v19.61l13.9,8v5l-13.9-8v22.89Zm27.33,15.78V192.87l5,2.88v52.48Zm34.22,19.45a29.55,29.55,0,0,1-3.59-1.46,36.74,36.74,0,0,1-3.92-2,29.19,29.19,0,0,1-8.78-7.13,21.82,21.82,0,0,1-3.72-9.62,126.69,126.69,0,0,1-.93-17.85q0-11.76.93-16.63c.66-3.28,1.91-5.08,3.72-5.4s4.79.63,8.78,2.93a44.91,44.91,0,0,1,3.92,2.57,37.3,37.3,0,0,1,3.39,2.72v4.65a61.85,61.85,0,0,0-6.25-4.29q-4.59-2.66-6.45-2.35c-1.24.2-2.06,1.6-2.46,4.22a130.68,130.68,0,0,0-.53,14.49,149.94,149.94,0,0,0,.53,15.11,14.73,14.73,0,0,0,2.46,7.06,21.89,21.89,0,0,0,6.45,5.1,40.4,40.4,0,0,0,6.45,3Zm28.68,16.86L330,265.25l-14-8.1-3.13,12.77-5-2.88,12-45.57,6.52,3.76,12,59.39Zm-10-51.33-.33-.19-5.65,22.67,11.63,6.72Zm24.15,59.48V242.52l-10.17-5.87v-5.19l25.33,14.62v5.19l-10.17-5.87v47.29Zm20.88,12.06V249.39l21.61,12.47v5l-16.62-9.6v18.39L387.64,284v5l-14.43-8.33v19l16.62,9.6v5Z"/>
                         <polygon class="text-gem fill-current" points="29.62 397.44 29.62 432.08 479.62 691.89 479.62 657.25 29.62 397.44"/>
                     </svg>
-                    <h2 class="text-md sm:text-lg lg:text-2xl font-semibold text-site">Certify</h2>
-                    <p class="text-md lg:text-lg text-siteLite">
+                    <h2 class="text-base sm:text-lg lg:text-2xl font-semibold text-site">Certify</h2>
+                    <p class="text-base lg:text-lg text-siteLite">
                         Although optional, but earning a certificate means a lot. So we recommend that you get certified by us.
                     </p>
                 </div>
@@ -117,7 +117,7 @@
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn C</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for performance computing</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for performance computing</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/c" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
                     <a href="/c/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
@@ -144,7 +144,7 @@ int main(int argc, char **argv) {
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn C++</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for gaming and software</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for gaming and software</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/cpp" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
                     <a href="/cpp/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
@@ -172,7 +172,7 @@ int main(int argc, char **argv) {
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn Java</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for enterprise grade software</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for enterprise grade software</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/java" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
                     <a href="/java/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
@@ -198,7 +198,7 @@ int main(int argc, char **argv) {
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn Python</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for AI and everything</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for AI and everything</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/python" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
                     <a href="/python/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
@@ -220,7 +220,7 @@ int main(int argc, char **argv) {
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn HTML</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for creating websites</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for creating websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/html" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
                     <a href="/html/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
@@ -251,7 +251,7 @@ int main(int argc, char **argv) {
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn CSS</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for styling websites</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for styling websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/css" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
                     <a href="/css/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
@@ -278,7 +278,7 @@ int main(int argc, char **argv) {
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 flex flex-col md:flex-row justify-center items-center space-x-0 space-y-6 md:space-x-6 md:space-y-0">
             <div class="flex flex-1 flex-col space-y-4 justify-center self-stretch items-center">
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn JS</h1>
-                <p class="text-md md:text-lg font-medium text-white">The language for controlling websites</p>
+                <p class="text-base md:text-lg font-medium text-white">The language for controlling websites</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
                     <a href="/javascript" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
                     <a href="/javascript/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>

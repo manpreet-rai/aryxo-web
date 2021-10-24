@@ -12,7 +12,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('c/introduction-to-c', function () {
-    return view('courses.c.introduction-to-c');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/c.json')), true);
+    $contents = preg_split("/\r\n|\n|\r/", file_get_contents(resource_path('views/contents/c/introduction-to-c.yaml')));
+    return view('chapter', [
+        'material' => 'courses.c.introduction-to-c',
+        'course' => 'c',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => '',
+        'next' => 'Installation process']);
 });
 
 Route::get('c/installation-process', function () {
