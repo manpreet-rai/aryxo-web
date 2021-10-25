@@ -128,7 +128,7 @@
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">hello.c</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-c code">#include&lt;stdio.h&gt;
+                    <pre><code class="language-c">#include&lt;stdio.h&gt;
 
 int main(int argc, char **argv) {
     printf("Hello World\n");
@@ -155,7 +155,7 @@ int main(int argc, char **argv) {
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">hello.cpp</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-cpp code">#include&lt;iostream&gt;
+                    <pre><code class="language-cpp">#include&lt;iostream&gt;
 
 using namespace std;
 
@@ -183,7 +183,7 @@ int main(int argc, char **argv) {
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">Hello.java</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-java code">public class Hello {
+                    <pre><code class="language-java">public class Hello {
     public static void main (String[] args){
         System.out.println("Hello World");
     }
@@ -209,7 +209,7 @@ int main(int argc, char **argv) {
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">hello.py</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-python code">print('Hello World')</code></pre>
+                    <pre><code class="language-python">print('Hello World')</code></pre>
                 </div>
             </div>
         </div>
@@ -231,7 +231,7 @@ int main(int argc, char **argv) {
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">index.html</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-html code">&lt;html&gt;
+                    <pre><code class="language-html">&lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;Website&lt;/title&gt;
     &lt;link href="app.css" rel="stylesheet"&gt;
@@ -262,7 +262,7 @@ int main(int argc, char **argv) {
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">app.css</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-css code">.greeting {
+                    <pre><code class="language-css">.greeting {
     color: crimson;
     text-align: center;
     font-family: sans-serif;
@@ -289,7 +289,7 @@ int main(int argc, char **argv) {
                 <h4 class="self-stretch bg-siteLite bg-opacity-50 font-medium text-white px-4 py-2 flex items-center rounded-t-2xl">app.js</h4>
 
                 <div class="self-stretch h-full bg-siteLite rounded-b-2xl">
-                    <pre><code class="language-js code">console.log('Hello World');</code></pre>
+                    <pre><code class="language-js">console.log('Hello World');</code></pre>
                 </div>
             </div>
         </div>

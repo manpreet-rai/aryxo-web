@@ -5,8 +5,8 @@
 @endsection
 
 @section('content')
-    <div class="flex max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-12 gap-x-8">
-        <nav class="max-w-sm pt-6 whitespace-nowrap">
+    <div class="flex relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-12 gap-x-8">
+        <nav class="hidden md:block max-w-sm whitespace-nowrap">
             <ul>
                 @foreach($curriculum as $unit => $chapters)
                     <li class="text-site dark:text-white font-semibold">{{ $unit }}</li>
@@ -22,10 +22,31 @@
             </ul>
         </nav>
 
-        @include($material)
+        @section('curriculum')
+            <nav class="md:hidden max-w-sm pt-8 text-lg">
+                <p class="px-4 pb-1 text-siteLite dark:text-gray-400 font-semibold">Curriculum</p>
+                <ul>
+                    @foreach($curriculum as $unit => $chapters)
+                        <li class="px-4 text-site dark:text-white font-semibold">{{ $unit }}</li>
 
-        <nav class="max-w-sm pt-6 whitespace-nowrap">
-            <p class="text-site dark:text-white font-semibold">Table of Contents</p>
+                        <ul class="mb-4">
+                            @foreach($chapters as $chapter)
+                                <li class="px-8 @if(last(request()->segments()) === Str::slug($chapter)) font-medium px-2 py-1 text-white bg-gem rounded @else text-siteLite dark:text-gray-300 mt-1 @endif">
+                                    <a class="@if(last(request()->segments()) !== Str::slug($chapter)) hover:text-gem @endif" href="{{ '/'.$course.'/'.Str::slug($chapter) }}">{{ $chapter }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endforeach
+                </ul>
+            </nav>
+        @endsection
+
+        <article>
+            @include($material)
+        </article>
+
+        <nav class="hidden md:flex flex-col flex-initial sticky top-16 overflow-y-auto h-80 min-w-min max-w-sm px-6 d-scrollbar scrollbar-thin scrollbar-thumb-rounded whitespace-nowrap">
+            <p class="text-siteLite dark:text-gray-300 font-semibold">On this page</p>
             <ul>
                 @foreach($contents as $content)
                     @if(preg_match('/^\s*?\+\s*?([\D]+)\s*?$/', $content, $result))
@@ -36,6 +57,21 @@
                 @endforeach
             </ul>
         </nav>
+
+        @section('contents')
+            <nav class="md:hidden max-w-sm pt-8 text-lg">
+                <p class="px-4 pb-1 text-siteLite dark:text-gray-400 font-semibold">On this page</p>
+                <ul>
+                    @foreach($contents as $content)
+                        @if(preg_match('/^\s*?\+\s*?([\D]+)\s*?$/', $content, $result))
+                            <li class="text-site dark:text-white font-medium pb-1"><a class="px-4 hover:text-gem" href="#{{ Str::slug($result[1]) }}">{{ $result[1] }}</a></li>
+                        @elseif(preg_match('/^\s*?-\s*?([\D]+)\s*?$/', $content, $result))
+                            <li class="text-siteLite dark:text-gray-300 pb-1"><a class="px-8 hover:text-gem" href="#{{ Str::slug($result[1]) }}">{{ $result[1] }}</a></li>
+                        @endif
+                    @endforeach
+                </ul>
+            </nav>
+        @endsection
     </div>
 
     <!-- Navigation Buttons -->
@@ -60,6 +96,9 @@
             </a>
         </div>
     </div>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/prism.js') }}"></script>
 @endsection
 
-
+<!-- SEO -->

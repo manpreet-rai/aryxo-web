@@ -186,10 +186,10 @@
         </div>
         -->
 
-        <div id="menu-mobile" class="hidden md:hidden w-full fixed top-0 d-menu z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
-            <div class="flex flex-col pt-4 w-4/5 h-screen bg-white dark:bg-siteLite">
-                <div class="flex w-full justify-end pr-4">
-                    <button class="h-12 w-12 flex justify-center items-center" onclick="function toggleMenu(){
+        <div id="menu-mobile" class="hidden md:hidden w-full h-full fixed top-0 d-menu overflow-y-auto d-scrollbar scrollbar-thin scrollbar-thumb-rounded z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
+            <div class="flex flex-col relative pt-4 w-4/5 min-h-screen bg-white dark:bg-siteLite">
+                <div class="flex sticky top-4 w-full justify-end pr-4">
+                    <button class="h-12 w-12 flex justify-center items-center bg-white dark:bg-siteLite rounded-lg" onclick="function toggleMenu(){
                         document.getElementById('menu-mobile').classList.toggle('hidden');
                     } toggleMenu();">
                         <svg class="h-5 w-5" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -200,13 +200,52 @@
                 </div>
 
                 <div class="p-8 space-y-2">
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/c">C</a>
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/cpp">C++</a>
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/java">Java</a>
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/python">Python</a>
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/html">HTML</a>
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/csstyles">CSS</a>
-                    <a class="flex text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/javascript">JS</a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/c">
+                        <span>C</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/cpp">
+                        <span>C++</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/java">
+                        <span>Java</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/python">
+                        <span>Python</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/html">
+                        <span>HTML</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/csstyles">
+                        <span>CSS</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a class="inline-flex justify-between items-center w-full text-lg font-medium whitespace-nowrap px-4 py-2 hover:text-gray-700 text-gray-800 dark:text-gray-200 dark:hover:text-gray-300" href="/javascript">
+                        <span>JS</span>
+                        <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" viewBox="0 0 24 24" class="w-4 h-4 stroke-current">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+
+                    @yield('contents')
+                    @yield('curriculum')
+
                 </div>
             </div>
         </div>
