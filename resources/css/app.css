@@ -117,11 +117,11 @@
 .light pre[class*="language-"] {
     background-color: #fbfbfd;
     box-shadow: 0 1px 1px rgba(0,0,0,.08);
-    @apply text-base md:text-lg;
+    @apply text-sm md:text-base;
 }
 
 .dark pre[class*="language-"] {
     background-color: #003543;
     box-shadow: 0 1px 1px rgba(0,0,0,.08);
-    @apply text-base md:text-lg;
+    @apply text-sm md:text-base;
 }
