@@ -200,7 +200,7 @@ div.code-toolbar > .toolbar > .toolbar-item > button {
     background: none;
     border: 2px solid #2C2C2C;
     color: inherit;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'DM Mono', monospace;
     font-weight: 600;
     line-height: normal;
     overflow: visible;
@@ -217,7 +217,7 @@ div.code-toolbar > .toolbar > .toolbar-item > span {
     font-size: .8em;
     padding: 0.5em 1em;
     background: #EFEFEF;
-    box-shadow: 0 2px 0 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.80);
     border-radius: 9999px;
 }
 

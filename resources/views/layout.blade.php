@@ -20,7 +20,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="{{ asset('css/prism-dark.css') }}">
+        <link id="prism" rel="stylesheet" href="{{ asset('css/prism-dark.css') }}">
 
         <!-- Custom Head -->
         @yield('custom-head')
@@ -187,7 +187,7 @@
         -->
 
         <div id="menu-mobile" class="hidden md:hidden w-full h-full fixed top-0 d-menu overflow-y-auto d-scrollbar scrollbar-thin scrollbar-thumb-rounded z-50 backdrop-filter backdrop-blur-md text-gray-800 dark:text-gray-200">
-            <div class="flex flex-col relative pt-4 w-4/5 min-h-screen bg-white dark:bg-siteLite">
+            <div class="flex flex-col relative pt-4 w-4/5 min-h-screen bg-gray-100 dark:bg-siteLite">
                 <div class="flex sticky top-4 w-full justify-end pr-4">
                     <button class="h-12 w-12 flex justify-center items-center bg-white dark:bg-siteLite rounded-lg" onclick="function toggleMenu(){
                         document.getElementById('menu-mobile').classList.toggle('hidden');

@@ -19,3 +19,15 @@
 <p class="paragraph">Pointers provide easy and direct access to memory. These allow faster manipulation in memory and impacts performance of the final product.Pointers can be used for arrays, memories, structures, and functions.</p>
 <h3 id="portable" class="subsubheading">Portable</h3>
 <p class="paragraph">The aim for C was a language which could be portable, means the applications written once can be used anywhere with minimal hassle. C provided such portability, as the compilers are designed for almost any type of device, the code compilation for new hardware is very easy.</p>
+<h2 id="sample-program" class="subheading">Sample Program</h2>
+<p class="paragraph">Let's see what a simple <strong>'Hello World'</strong> program looks like in C. This program is a standard practice done by new programmers to see how things are laid down in new programming language environment with minimum setup. This sample program is written in <strong>hello.c</strong> file, which gives the shown result after execution. We will discuss in depth about this program shortly.</p>
+<p class="file">hello.c</p>
+<pre><code class="language-c">#include&lt;stdio.h&gt;
+
+int main(int argc, char **argv) {
+    printf(&quot;Hello World\n&quot;);
+    return 0;
+}
+</code></pre>
+<pre><code class="language-nothing">output&gt; Hello World
+</code></pre>

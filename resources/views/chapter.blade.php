@@ -76,18 +76,18 @@
 
     <!-- Navigation Buttons -->
     <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-8">
-        <div class="flex w-full justify-center md:justify-between pt-6 px-2 md:px-0 text-siteLite dark:text-gray-300 text-lg md:text-xl font-medium">
-            <a href="@if($prev === '') {{ '/'.$course }} @else {{ Str::slug($prev) }} @endif" class="hover:text-gem inline-flex justify-between items-center space-x-2">
+        <div class="flex gap-x-8 w-full justify-between pt-6 px-2 md:px-0 text-siteLite dark:text-gray-300 md:text-lg font-medium">
+            <a href="@if($prev === '') {{ '/'.$course }} @else {{ Str::slug($prev) }} @endif" class="text-gray-500 dark:text-gray-400 w-2/5 hover:text-gem inline-flex justify-start items-center space-x-2">
                 <span>
                     <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M20 11V13H8L13.5 18.5L12.08 19.92L4.16 12L12.08 4.07996L13.5 5.49996L8 11H20Z" fill="currentColor"/>
                     </svg>
                 </span>
-                <span>@if($prev === '') Curriculum @else {{ $prev }} @endif</span>
+                <span class="text-left">@if($prev === '') Curriculum @else {{ $prev }} @endif</span>
             </a>
 
-            <a href="@if($next === '') {{ $course }} @else {{ Str::slug($next) }} @endif" class="hover:text-gem inline-flex justify-between items-center space-x-2">
-                <span>@if($next === '') Curriculum @else {{ $next }} @endif</span>
+            <a href="@if($next === '') {{ $course }} @else {{ Str::slug($next) }} @endif" class="w-2/5 hover:text-gem inline-flex justify-end items-center space-x-2">
+                <span class="text-right">@if($next === '') Curriculum @else {{ $next }} @endif</span>
                 <span>
                     <svg class="w-6 h-6" viewBox="0 0 24 24">
                         <path d="M4 11v2h12l-5.5 5.5l1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5L16 11H4z" fill="currentColor" />
@@ -100,5 +100,3 @@
     <!-- Scripts -->
     <script src="{{ asset('js/prism.js') }}"></script>
 @endsection
-
-<!-- SEO -->

@@ -1,6 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -104,4 +102,26 @@
 
 .paragraph {
     @apply text-siteLite dark:text-gray-50 text-base md:text-lg pt-2;
+}
+
+.file {
+    box-shadow: 0 1px 1px rgba(0,0,0,.08);
+    @apply bg-codeLite dark:bg-siteLite px-2 py-1 rounded-md text-siteLite dark:text-gray-50 text-sm md:text-base mt-4 inline-block;
+}
+
+.output {
+    box-shadow: 0 1px 1px rgba(0,0,0,.08);
+    @apply bg-codeLite dark:bg-siteLite px-2 py-1 rounded-md text-siteLite dark:text-gray-50 text-sm md:text-base mt-4 inline-block;
+}
+
+.light pre[class*="language-"] {
+    background-color: #fbfbfd;
+    box-shadow: 0 1px 1px rgba(0,0,0,.08);
+    @apply text-base md:text-lg;
+}
+
+.dark pre[class*="language-"] {
+    background-color: #003543;
+    box-shadow: 0 1px 1px rgba(0,0,0,.08);
+    @apply text-base md:text-lg;
 }
