@@ -16,6 +16,14 @@ body {
     font-size: 1rem;
 }
 
+.dark .active {
+    @apply text-gem;
+}
+
+.active {
+    @apply text-gem;
+}
+
 .dm-serif {
     font-family: 'DM Serif Display', serif;
 }

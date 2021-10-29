@@ -112,12 +112,12 @@
         // Build ScrollMagic Scenes
         @foreach($contents as $key => $values)
             new ScrollMagic.Scene({triggerElement: "#{{ Str::slug($key) }}", triggerHook: 0.3})
-                .setClassToggle("#{{ Str::slug($key).'-link' }}", "text-gem") // add class toggle
+                .setClassToggle("#{{ Str::slug($key).'-link' }}", "active") // add class toggle
                 .addTo(controller);
             @if(isset($values))
                 @foreach($values as $value)
                     new ScrollMagic.Scene({triggerElement: "#{{ Str::slug($value) }}", triggerHook: 0.3})
-                        .setClassToggle("#{{ Str::slug($value).'-link' }}", "text-gem") // add class toggle
+                        .setClassToggle("#{{ Str::slug($value).'-link' }}", "active") // add class toggle
                         .addTo(controller);
                 @endforeach
             @endif

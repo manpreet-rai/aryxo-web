@@ -22,12 +22,6 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link id="prism" rel="stylesheet" href="{{ asset('css/prism-dark.css') }}">
 
-        <style>
-            .active {
-                background-color: #3b82f6;
-            }
-        </style>
-
         <!-- Custom Head -->
         @yield('custom-head')
     </head>
