@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Yaml\Yaml;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('c/introduction-to-c', function () {
     $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/c.json')), true);
-    $contents = preg_split("/\r\n|\n|\r/", file_get_contents(resource_path('views/contents/c/introduction-to-c.yaml')));
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/c/introduction-to-c.yml')));
     return view('chapter', [
         'material' => 'courses.c.introduction-to-c',
         'course' => 'c',

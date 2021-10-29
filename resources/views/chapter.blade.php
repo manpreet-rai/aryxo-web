@@ -2,6 +2,9 @@
 
 @section('custom-head')
     @include('scripts.custom-head')
+
+    <!-- ScrollMagic Script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 @endsection
 
 @section('content')
@@ -11,9 +14,9 @@
                 @foreach($curriculum as $unit => $chapters)
                     <li class="text-site dark:text-white font-semibold">{{ $unit }}</li>
 
-                    <ul class="mb-4">
+                    <ul class="mb-4 -mt-2">
                         @foreach($chapters as $chapter)
-                            <li class="pl-4 @if(last(request()->segments()) === Str::slug($chapter)) font-medium px-2 py-1 text-white bg-gem rounded @else text-siteLite dark:text-gray-300 mt-1 @endif">
+                            <li class="pl-4 text-base @if(last(request()->segments()) === Str::slug($chapter)) font-medium px-2 py-1 text-white bg-gem rounded @else text-siteLite dark:text-gray-300 @endif">
                                 <a class="@if(last(request()->segments()) !== Str::slug($chapter)) hover:text-gem @endif" href="{{ '/'.$course.'/'.Str::slug($chapter) }}">{{ $chapter }}</a>
                             </li>
                         @endforeach
@@ -29,9 +32,9 @@
                     @foreach($curriculum as $unit => $chapters)
                         <li class="px-4 text-site dark:text-white font-semibold">{{ $unit }}</li>
 
-                        <ul class="mb-4">
+                        <ul class="mb-4 -mt-2">
                             @foreach($chapters as $chapter)
-                                <li class="px-8 @if(last(request()->segments()) === Str::slug($chapter)) font-medium px-2 py-1 text-white bg-gem rounded @else text-siteLite dark:text-gray-300 mt-1 @endif">
+                                <li class="px-8 @if(last(request()->segments()) === Str::slug($chapter)) font-medium px-2 py-1 text-white bg-gem rounded @else text-siteLite dark:text-gray-300 @endif">
                                     <a class="@if(last(request()->segments()) !== Str::slug($chapter)) hover:text-gem @endif" href="{{ '/'.$course.'/'.Str::slug($chapter) }}">{{ $chapter }}</a>
                                 </li>
                             @endforeach
@@ -46,13 +49,14 @@
         </article>
 
         <nav class="hidden md:flex flex-col flex-initial sticky top-16 overflow-y-auto h-80 min-w-min max-w-sm px-6 d-scrollbar scrollbar-thin scrollbar-thumb-rounded whitespace-nowrap">
-            <p class="text-siteLite dark:text-gray-300 font-semibold">On this page</p>
+            <p class="text-siteLite dark:text-gray-300 font-semibold -mb-1">On this page</p>
             <ul>
-                @foreach($contents as $content)
-                    @if(preg_match('/^\s*?\+\s*?([\D]+)\s*?$/', $content, $result))
-                        <li class="text-site dark:text-white font-medium"><a class="pl-4 hover:text-gem" href="#{{ Str::slug($result[1]) }}">{{ $result[1] }}</a></li>
-                    @elseif(preg_match('/^\s*?-\s*?([\D]+)\s*?$/', $content, $result))
-                        <li class="text-siteLite dark:text-gray-300"><a class="pl-8 hover:text-gem" href="#{{ Str::slug($result[1]) }}">{{ $result[1] }}</a></li>
+                @foreach($contents as $key => $values)
+                    <li id="{{ Str::slug($key).'-link' }}" class="text-site dark:text-white font-medium"><a class="pl-4 hover:text-gem" href="#{{ Str::slug($key) }}">{{ $key }}</a></li>
+                    @if(isset($values))
+                        @foreach($values as $value)
+                            <li id="{{ Str::slug($value).'-link' }}" class="text-base text-siteLite dark:text-gray-300"><a class="pl-8 hover:text-gem" href="#{{ Str::slug($value) }}">{{ $value }}</a></li>
+                        @endforeach
                     @endif
                 @endforeach
             </ul>
@@ -60,13 +64,14 @@
 
         @section('contents')
             <nav class="md:hidden max-w-sm pt-8 text-lg">
-                <p class="px-4 pb-1 text-siteLite dark:text-gray-400 font-semibold">On this page</p>
+                <p class="px-4 text-siteLite dark:text-gray-400 font-semibold">On this page</p>
                 <ul>
-                    @foreach($contents as $content)
-                        @if(preg_match('/^\s*?\+\s*?([\D]+)\s*?$/', $content, $result))
-                            <li class="text-site dark:text-white font-medium pb-1"><a class="px-4 hover:text-gem" href="#{{ Str::slug($result[1]) }}">{{ $result[1] }}</a></li>
-                        @elseif(preg_match('/^\s*?-\s*?([\D]+)\s*?$/', $content, $result))
-                            <li class="text-siteLite dark:text-gray-300 pb-1"><a class="px-8 hover:text-gem" href="#{{ Str::slug($result[1]) }}">{{ $result[1] }}</a></li>
+                    @foreach($contents as $key => $values)
+                        <li class="text-site dark:text-white font-medium"><a class="px-4 hover:text-gem" href="#{{ Str::slug($key) }}">{{ $key }}</a></li>
+                        @if(isset($values))
+                            @foreach($values as $value)
+                                <li class="text-siteLite dark:text-gray-300"><a class="px-8 hover:text-gem" href="#{{ Str::slug($value) }}">{{ $value }}</a></li>
+                            @endforeach
                         @endif
                     @endforeach
                 </ul>
@@ -99,4 +104,23 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/prism.js') }}"></script>
+
+    <script>
+        // Initialize ScrollMagic Controller
+        let controller = new ScrollMagic.Controller({globalSceneOptions: {duration: "40%"}});
+
+        // Build ScrollMagic Scenes
+        @foreach($contents as $key => $values)
+            new ScrollMagic.Scene({triggerElement: "#{{ Str::slug($key) }}", triggerHook: 0.3})
+                .setClassToggle("#{{ Str::slug($key).'-link' }}", "text-gem") // add class toggle
+                .addTo(controller);
+            @if(isset($values))
+                @foreach($values as $value)
+                    new ScrollMagic.Scene({triggerElement: "#{{ Str::slug($value) }}", triggerHook: 0.3})
+                        .setClassToggle("#{{ Str::slug($value).'-link' }}", "text-gem") // add class toggle
+                        .addTo(controller);
+                @endforeach
+            @endif
+        @endforeach
+    </script>
 @endsection

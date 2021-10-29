@@ -174,8 +174,8 @@ int main(int argc, char **argv) {
                 <h1 class="dm-serif text-gray-200 text-4xl sm:text-6xl lg:text-7xl">Learn Java</h1>
                 <p class="text-base md:text-lg font-medium text-white">The language for enterprise grade software</p>
                 <div class="flex flex-col self-stretch justify-center md:flex-row space-x-0 space-y-4 md:space-x-4 md:space-y-0 text-sm md:text-lg">
-                    <a href="/java" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-semibold">View Curriculum</a>
-                    <a href="/java/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-semibold">Start Learning</a>
+                    <a href="/java" class="text-white hover:text-green-500 text-lg px-6 py-2 rounded-2xl font-medium">View Curriculum</a>
+                    <a href="/java/intro" class="bg-gem hover:bg-green-500 text-white text-lg px-6 py-2 rounded-2xl font-medium">Start Learning</a>
                 </div>
             </div>
 

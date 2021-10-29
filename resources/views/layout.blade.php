@@ -22,14 +22,14 @@
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <link id="prism" rel="stylesheet" href="{{ asset('css/prism-dark.css') }}">
 
-        <!-- Custom Head -->
-        @yield('custom-head')
-
         <style>
-            body {
-                font-family: 'DM Sans', sans-serif;
+            .active {
+                background-color: #3b82f6;
             }
         </style>
+
+        <!-- Custom Head -->
+        @yield('custom-head')
     </head>
 
     <body class="antialiased relative d-body-bg d-body-text-color root-text d-scrollbar scrollbar-thin scrollbar-thumb-rounded">
