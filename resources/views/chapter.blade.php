@@ -9,10 +9,10 @@
 
 @section('content')
     <div class="flex relative max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pt-12 gap-x-8">
-        <nav class="hidden md:block max-w-sm whitespace-nowrap">
+        <nav class="hidden md:block max-w-sm whitespace-nowrap -mt-2">
             <ul>
                 @foreach($curriculum as $unit => $chapters)
-                    <li class="text-site dark:text-white font-semibold">{{ $unit }}</li>
+                    <li class="-mb-1 text-site dark:text-white font-semibold">{{ $unit }}</li>
 
                     <ul class="mb-4 -mt-2">
                         @foreach($chapters as $chapter)
@@ -27,7 +27,7 @@
 
         @section('curriculum')
             <nav class="md:hidden max-w-sm pt-8 text-lg">
-                <p class="px-4 pb-1 text-siteLite dark:text-gray-400 font-semibold">Curriculum</p>
+                <p class="px-4 text-siteLite dark:text-gray-400 font-semibold">Curriculum</p>
                 <ul>
                     @foreach($curriculum as $unit => $chapters)
                         <li class="px-4 text-site dark:text-white font-semibold">{{ $unit }}</li>
@@ -67,10 +67,10 @@
                 <p class="px-4 text-siteLite dark:text-gray-400 font-semibold">On this page</p>
                 <ul>
                     @foreach($contents as $key => $values)
-                        <li class="text-site dark:text-white font-medium"><a class="px-4 hover:text-gem" href="#{{ Str::slug($key) }}">{{ $key }}</a></li>
+                        <li class="text-site dark:text-white font-medium"><a class="pr-4 hover:text-gem" href="#{{ Str::slug($key) }}">{{ $key }}</a></li>
                         @if(isset($values))
                             @foreach($values as $value)
-                                <li class="text-siteLite dark:text-gray-300"><a class="px-8 hover:text-gem" href="#{{ Str::slug($value) }}">{{ $value }}</a></li>
+                                <li class="text-siteLite dark:text-gray-300"><a class="px-4 hover:text-gem" href="#{{ Str::slug($value) }}">{{ $value }}</a></li>
                             @endforeach
                         @endif
                     @endforeach

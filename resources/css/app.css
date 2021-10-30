@@ -4,6 +4,16 @@
 @tailwind components;
 @tailwind utilities;
 
+::-moz-selection { /* Code for Firefox */
+    color: white;
+    background: #379761;
+}
+
+::selection {
+    color: white;
+    background: #379761;
+}
+
 body {
     font-family: 'DM Sans', sans-serif;
 }
