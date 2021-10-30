@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use App\Models\Subscriber;
+use Illuminate\Support\Str;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +18,15 @@ use Illuminate\Support\Facades\Route;
 // General routes
 Route::view('/', 'index');
 Route::view('sitemap', 'sitemap.sitemap');
+
+// Newsletter
+Route::post('/newsletter', function (Request $request){
+    if (!Subscriber::where('email', $request['email'])->exists()){
+        Subscriber::create(['email'=>$request['email'], 'token'=>Str::random(60)]);
+    }
+
+    return redirect('/')->with('status', 'You have been added to our subscription list. Thank you!');
+});
 
 // Curriculum routes
 @include "curriculum.php";

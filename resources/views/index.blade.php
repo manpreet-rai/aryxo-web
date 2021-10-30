@@ -296,8 +296,8 @@ int main(int argc, char **argv) {
     </div>
 
     <!-- Newsletter -->
-    <div class="bg-site select-none">
-        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 select-none">
+    <div class="bg-site">
+        <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12">
             <div class="bg-siteLite rounded-2xl p-8 flex flex-col items-center space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4">
                 <div class="flex w-full justify-center items-center">
                     <span class="text-gray-50 text-2xl md:text-4xl font-medium dm-serif">Subscribe to our newsletter</span>
@@ -305,12 +305,21 @@ int main(int argc, char **argv) {
 
                 <form class="flex w-full flex-col justify-center items-center space-y-4 space-x-0 md:flex-row md:space-y-0 md:space-x-4" method="POST" action="/newsletter">
                     @csrf
-                    <input class="text-site placeholder-siteLite w-full md:w-auto px-4 py-2 rounded-2xl bg-gray-300 text-sm hover:bg-gray-50 focus:bg-gray-50 font-semibold border border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-gray-50 focus:outline-none" type="email" placeholder="Email" spellcheck="false">
+                    <input name="email" class="text-site placeholder-siteLite w-full md:w-auto px-4 py-2 rounded-2xl bg-gray-300 text-sm hover:bg-gray-50 focus:bg-gray-50 font-semibold border border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-gray-50 focus:outline-none" type="email" placeholder="Email" spellcheck="false" required>
                     <input class="w-full md:w-auto px-4 py-2 rounded-2xl text-white text-sm bg-gem hover:bg-green-500 font-semibold" type="submit" value="Subscribe">
                 </form>
             </div>
         </div>
     </div>
+
+    @if(\Illuminate\Support\Facades\Session::has('status'))
+        <div id="notification" class="absolute left-0 right-0 w-full top-20 max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-white font-semibold text-sm lg:text-lg text-center">
+            <div class="rounded-2xl px-3 lg:px-6 py-4 bg-gem w-full flex justify-between items-center">
+                <span class="w-auto">{{ \Illuminate\Support\Facades\Session::get('status') }}</span>
+                <button class="bg-siteLite font-semibold flex justify-center items-center h-6 w-6 rounded-full" onclick="document.getElementById('notification').remove()">⨯</button>
+            </div>
+        </div>
+    @endif
 
     <!-- Scripts -->
     <script src="{{ asset('js/prism.js') }}"></script>
