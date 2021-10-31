@@ -33,7 +33,7 @@ Route::post('contact', function (Request $request){
     ])->json('success');
 
     if ($response){
-        Feedback::create($request);
+        Feedback::create(['name' => $request['name'], 'email'=>$request['email'], 'type'=>$request['type'], 'message'=>$request['message'], 'g-recaptcha-response'=>$request['g-recaptcha-response']]);
         return redirect('/')->with('status', 'Your feedback has reached us. Thank you!');
     } else {
         return redirect('/')->with('failure', 'Failed to send feedback. Please retry.');
