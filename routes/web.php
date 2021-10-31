@@ -27,12 +27,12 @@ Route::get('contact', function (){
     return view('contact');
 });
 Route::post('contact', function (Request $request){
-    $response = Http::post('https://www.google.com/recaptcha/api/siteverify', [
+    $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
         'secret' => '6LeGFQYdAAAAAEVlZjan0KsY9BHLBldssnaThffA',
         'response' => $request['g-recaptcha-response'],
-    ]);
+    ])->json('success');
 
-    if (json_decode($response['success'], true)){
+    if ($response){
         Feedback::create($request);
         return redirect('/')->with('status', 'Your feedback has reached us. Thank you!');
     } else {
