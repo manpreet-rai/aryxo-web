@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Http;
 Route::view('/', 'index');
 Route::view('sitemap', 'sitemap.sitemap');
 
-// Contact
+// Contact routes
 Route::get('contact', function (){
     return view('contact');
 });
@@ -40,7 +40,28 @@ Route::post('contact', function (Request $request){
     }
 });
 
-// Newsletter
+// Certification routes
+Route::get('certification', function (){
+   return redirect('certification/verify');
+});
+Route::get('certification/verify', function (){
+   return view('verify');
+});
+Route::post('certification/verify', function (Request $request){
+    $pattern = '/\d{3}-\d{3}-\d{3}-\d{3}/';
+    if (preg_match($pattern, $request['certid'])) {
+        $certificates = ["202-110-001-001", "202-110-002-001", "202-110-002-002", "202-110-002-003", "202-110-003-001", "202-110-004-001", "202-110-004-002", "202-110-005-001", "202-110-005-002"];
+        if (in_array($request['certid'], $certificates, true)){
+            return \redirect()->back()->with('success', $request['certid']);
+        } else {
+            return \redirect()->back()->with('failure', 'No certificate found for "'.$request['certid'].'"');
+        }
+    } else {
+        return \redirect()->back()->with('error', 'Invalid Certificate ID');
+    }
+});
+
+// Newsletter routes
 Route::post('/newsletter', function (Request $request){
     if (!Subscriber::where('email', $request['email'])->exists()){
         Subscriber::create(['email'=>$request['email'], 'token'=>Str::random(60)]);
