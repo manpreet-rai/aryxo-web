@@ -19,7 +19,6 @@ class CreateFeedbackTable extends Migration
             $table->string('email')->nullable();
             $table->string('type')->nullable();
             $table->text('message')->nullable();
-            $table->string('g-recaptcha-response')->nullable();
             $table->timestamps();
         });
     }
