@@ -1,9 +1,12 @@
 <?php
 
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Subscriber;
+use App\Models\Feedback;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +21,24 @@ use Illuminate\Support\Str;
 // General routes
 Route::view('/', 'index');
 Route::view('sitemap', 'sitemap.sitemap');
+
+// Contact
+Route::get('contact', function (){
+    return view('contact');
+});
+Route::post('contact', function (Request $request){
+    $response = Http::post('https://www.google.com/recaptcha/api/siteverify', [
+        'secret' => '6LeGFQYdAAAAAEVlZjan0KsY9BHLBldssnaThffA',
+        'response' => $request['g-recaptcha-response'],
+    ]);
+
+    if (json_decode($response['success'], true)){
+        Feedback::create($request);
+        return redirect('/')->with('status', 'Your feedback has reached us. Thank you!');
+    } else {
+        return redirect('/')->with('failure', 'Failed to send feedback. Please retry.');
+    }
+});
 
 // Newsletter
 Route::post('/newsletter', function (Request $request){

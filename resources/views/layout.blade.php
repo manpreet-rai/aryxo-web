@@ -125,7 +125,7 @@
                 </div>
 
                 <div class="flex flex-1 justify-center md:justify-start divide-x divide-siteLite dark:divide-gray-300 md:ml-6">
-                    <a href="/about" class="text-xs md:text-sm px-2 hover:underline">About Us</a>
+                    <a href="/contact" class="text-xs md:text-sm px-2 hover:underline">Contact Us</a>
                     <a href="/privacy" class="text-xs md:text-sm px-2 hover:underline">Privacy Policy</a>
                     <a href="/terms" class="text-xs md:text-sm px-2 hover:underline">Terms of Use</a>
                     <a href="/legal" class="text-xs md:text-sm px-2 hover:underline">Legal</a>

@@ -321,6 +321,15 @@ int main(int argc, char **argv) {
         </div>
     @endif
 
+    @if(\Illuminate\Support\Facades\Session::has('failure'))
+        <div id="notification" class="absolute left-0 right-0 w-full top-20 max-w-7xl mx-auto px-4 md:px-6 lg:px-8 text-white font-semibold text-sm lg:text-lg text-center">
+            <div class="rounded-2xl px-3 lg:px-6 py-4 bg-red-700 w-full flex justify-between items-center">
+                <span class="w-auto">{{ \Illuminate\Support\Facades\Session::get('failure') }}</span>
+                <button class="bg-siteLite font-semibold flex justify-center items-center h-6 w-6 rounded-full" onclick="document.getElementById('notification').remove()">⨯</button>
+            </div>
+        </div>
+    @endif
+
     <!-- Scripts -->
     <script src="{{ asset('js/prism.js') }}"></script>
 @endsection
