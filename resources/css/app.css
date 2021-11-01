@@ -304,6 +304,7 @@ th {
 code {
     font-family: 'DM Mono', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
     font-weight: 500;
+    text-align: left;
     white-space: pre;
     word-spacing: normal;
     word-break: normal;

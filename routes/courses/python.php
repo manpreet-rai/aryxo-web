@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Yaml\Yaml;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,189 +13,565 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('python/python-introduction', function () {
-    return view('courses.python.python-introduction');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-introduction.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-introduction',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => '',
+        'next' => 'Features and Applications of Python']);
 });
 
 Route::get('python/features-and-applications-of-python', function () {
-    return view('courses.python.features-and-applications-of-python');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/features-and-applications-of-python.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.features-and-applications-of-python',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Introduction',
+        'next' => 'Python Installation']);
 });
 
 Route::get('python/python-installation', function () {
-    return view('courses.python.python-installation');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-installation.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-installation',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Features and Applications of Python',
+        'next' => 'Keywords and Identifiers']);
 });
 
 Route::get('python/keywords-and-identifiers', function () {
-    return view('courses.python.keywords-and-identifiers');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/keywords-and-identifiers.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.keywords-and-identifiers',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Installation',
+        'next' => 'Statements and Comments']);
 });
 
 Route::get('python/statements-and-comments', function () {
-    return view('courses.python.statements-and-comments');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/statements-and-comments.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.statements-and-comments',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Keywords and Identifiers',
+        'next' => 'Variables']);
 });
 
 Route::get('python/variables', function () {
-    return view('courses.python.variables');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/variables.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.variables',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Statements and Comments',
+        'next' => 'Operators']);
 });
 
 Route::get('python/operators', function () {
-    return view('courses.python.operators');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/operators.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.operators',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Variables',
+        'next' => 'Python IO and Import']);
 });
 
 Route::get('python/python-io-and-import', function () {
-    return view('courses.python.python-io-and-import');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-io-and-import.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-io-and-import',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Operators',
+        'next' => 'Python Namespace']);
 });
 
 Route::get('python/python-namespace', function () {
-    return view('courses.python.python-namespace');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-namespace.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-namespace',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python IO and Import',
+        'next' => 'If and Else']);
 });
 
 Route::get('python/if-and-else', function () {
-    return view('courses.python.if-and-else');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/if-and-else.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.if-and-else',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Namespace',
+        'next' => 'Loops']);
 });
 
 Route::get('python/loops', function () {
-    return view('courses.python.loops');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/loops.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.loops',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'If and Else',
+        'next' => 'Break and Continue']);
 });
 
 Route::get('python/break-and-continue', function () {
-    return view('courses.python.break-and-continue');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/break-and-continue.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.break-and-continue',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Loops',
+        'next' => 'Pass']);
 });
 
 Route::get('python/pass', function () {
-    return view('courses.python.pass');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/pass.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.pass',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Break and Continue',
+        'next' => 'Data Types']);
 });
 
 Route::get('python/data-types', function () {
-    return view('courses.python.data-types');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/data-types.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.data-types',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Pass',
+        'next' => 'Numbers']);
 });
 
 Route::get('python/numbers', function () {
-    return view('courses.python.numbers');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/numbers.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.numbers',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Data Types',
+        'next' => 'String']);
 });
 
 Route::get('python/string', function () {
-    return view('courses.python.string');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/string.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.string',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Numbers',
+        'next' => 'List']);
 });
 
 Route::get('python/list', function () {
-    return view('courses.python.list');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/list.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.list',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'String',
+        'next' => 'Tuple']);
 });
 
 Route::get('python/tuple', function () {
-    return view('courses.python.tuple');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/tuple.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.tuple',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'List',
+        'next' => 'Set']);
 });
 
 Route::get('python/set', function () {
-    return view('courses.python.set');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/set.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.set',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Tuple',
+        'next' => 'Dictionary']);
 });
 
 Route::get('python/dictionary', function () {
-    return view('courses.python.dictionary');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/dictionary.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.dictionary',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Set',
+        'next' => 'Functions']);
 });
 
 Route::get('python/functions', function () {
-    return view('courses.python.functions');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/functions.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.functions',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Dictionary',
+        'next' => 'Function Arguments']);
 });
 
 Route::get('python/function-arguments', function () {
-    return view('courses.python.function-arguments');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/function-arguments.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.function-arguments',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Functions',
+        'next' => 'Python Recursion']);
 });
 
 Route::get('python/python-recursion', function () {
-    return view('courses.python.python-recursion');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-recursion.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-recursion',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Function Arguments',
+        'next' => 'Anonymous or Lambda Function']);
 });
 
 Route::get('python/anonymous-or-lambda-function', function () {
-    return view('courses.python.anonymous-or-lambda-function');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/anonymous-or-lambda-function.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.anonymous-or-lambda-function',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Recursion',
+        'next' => 'Global Local and Nonlocal Functions']);
 });
 
 Route::get('python/global-local-and-nonlocal-functions', function () {
-    return view('courses.python.global-local-and-nonlocal-functions');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/global-local-and-nonlocal-functions.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.global-local-and-nonlocal-functions',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Anonymous or Lambda Function',
+        'next' => 'Global Keyword']);
 });
 
 Route::get('python/global-keyword', function () {
-    return view('courses.python.global-keyword');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/global-keyword.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.global-keyword',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Global Local and Nonlocal Functions',
+        'next' => 'Python Modules']);
 });
 
 Route::get('python/python-modules', function () {
-    return view('courses.python.python-modules');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-modules.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-modules',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Global Keyword',
+        'next' => 'Datetime Module']);
 });
 
 Route::get('python/datetime-module', function () {
-    return view('courses.python.datetime-module');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/datetime-module.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.datetime-module',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Modules',
+        'next' => 'Math Module']);
 });
 
 Route::get('python/math-module', function () {
-    return view('courses.python.math-module');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/math-module.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.math-module',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Datetime Module',
+        'next' => 'OS Module']);
 });
 
 Route::get('python/os-module', function () {
-    return view('courses.python.os-module');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/os-module.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.os-module',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Math Module',
+        'next' => 'Sys Module']);
 });
 
 Route::get('python/sys-module', function () {
-    return view('courses.python.sys-module');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/sys-module.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.sys-module',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'OS Module',
+        'next' => 'Python Packages']);
 });
 
 Route::get('python/python-packages', function () {
-    return view('courses.python.python-packages');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-packages.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-packages',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Sys Module',
+        'next' => 'Python PIP']);
 });
 
 Route::get('python/python-pip', function () {
-    return view('courses.python.python-pip');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-pip.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-pip',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Packages',
+        'next' => 'Python JSON']);
 });
 
 Route::get('python/python-json', function () {
-    return view('courses.python.python-json');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-json.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-json',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python PIP',
+        'next' => 'Python RegEx']);
 });
 
 Route::get('python/python-regex', function () {
-    return view('courses.python.python-regex');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-regex.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-regex',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python JSON',
+        'next' => 'Exception and its Types']);
 });
 
 Route::get('python/exception-and-its-types', function () {
-    return view('courses.python.exception-and-its-types');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/exception-and-its-types.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.exception-and-its-types',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python RegEx',
+        'next' => 'Exception Handling']);
 });
 
 Route::get('python/exception-handling', function () {
-    return view('courses.python.exception-handling');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/exception-handling.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.exception-handling',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Exception and its Types',
+        'next' => 'File Handling']);
 });
 
 Route::get('python/file-handling', function () {
-    return view('courses.python.file-handling');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/file-handling.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.file-handling',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Exception Handling',
+        'next' => 'Python Directory']);
 });
 
 Route::get('python/python-directory', function () {
-    return view('courses.python.python-directory');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/python-directory.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.python-directory',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'File Handling',
+        'next' => 'Arrays']);
 });
 
 Route::get('python/arrays', function () {
-    return view('courses.python.arrays');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/arrays.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.arrays',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Python Directory',
+        'next' => 'Array Operations']);
 });
 
 Route::get('python/array-operations', function () {
-    return view('courses.python.array-operations');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/array-operations.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.array-operations',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Arrays',
+        'next' => 'OOPs Concepts']);
 });
 
 Route::get('python/oops-concepts', function () {
-    return view('courses.python.oops-concepts');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/oops-concepts.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.oops-concepts',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Array Operations',
+        'next' => 'Class and Object']);
 });
 
 Route::get('python/class-and-object', function () {
-    return view('courses.python.class-and-object');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/class-and-object.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.class-and-object',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'OOPs Concepts',
+        'next' => 'Constructors']);
 });
 
 Route::get('python/constructors', function () {
-    return view('courses.python.constructors');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/constructors.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.constructors',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Class and Object',
+        'next' => 'Inheritance ']);
 });
 
 Route::get('python/inheritance', function () {
-    return view('courses.python.inheritance');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/inheritance.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.inheritance',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Constructors',
+        'next' => 'Abstraction']);
 });
 
 Route::get('python/abstraction', function () {
-    return view('courses.python.abstraction');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/abstraction.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.abstraction',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Inheritance ',
+        'next' => 'Operator Overloading']);
 });
 
 Route::get('python/operator-overloading', function () {
-    return view('courses.python.operator-overloading');
+    $curriculum = json_decode(file_get_contents(resource_path('views/curriculums/python.json')), true);
+    $contents = Yaml::parse(file_get_contents(resource_path('views/contents/python/operator-overloading.yml')));
+    return view('chapter', [
+        'material' => 'courses.python.operator-overloading',
+        'course' => 'python',
+        'curriculum' => $curriculum,
+        'contents' => $contents,
+        'prev' => 'Abstraction',
+        'next' => '']);
 });

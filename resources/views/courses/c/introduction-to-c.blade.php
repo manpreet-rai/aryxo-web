@@ -6,7 +6,7 @@
 <p class="paragraph">Many of the important ideas in C are influenced from <strong>BCPL</strong> (Basic Combined Programming Language) and in particular the <strong>B</strong> language which was designed by <strong>Ken Thompson</strong> who was a fellow of Dennis Ritchie at <strong>Bell Laboratories</strong> (USA) which served as the centre for creation of B and C languages and UNIX itself and many more technologies.</p>
 <h2 id="features" class="heading">Features</h2>
 <p class="paragraph">C programming language offers many features, some of these are shown in the figure below.</p>
-<p class="paragraph">@include('figures/c/chapter-1-fig-1')</p>
+<p class="paragraph">@include('figures/c/chapter-1-figure-1')</p>
 <p class="center"><span class="caption">Some features of C</span></p>
 <h3 id="low-level" class="subheading">Low Level</h3>
 <p class="paragraph">C is low level programming language which means the final code is directly understood by the processor, which improves efficiency and unmatched performance. C is used to write kernel and system software such as drivers due to its low level nature</p>

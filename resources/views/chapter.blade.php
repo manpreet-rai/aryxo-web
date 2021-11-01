@@ -14,7 +14,7 @@
                 @foreach($curriculum as $unit => $chapters)
                     <li class="-mb-1 text-site dark:text-white font-semibold">{{ $unit }}</li>
 
-                    <ul class="mb-4 -mt-2">
+                    <ul class="mb-4 -mt-2 pl-4">
                         @foreach($chapters as $chapter)
                             <li class="pl-4 text-base @if(last(request()->segments()) === Str::slug($chapter)) font-medium px-2 py-1 text-white bg-gem rounded @else text-siteLite dark:text-gray-300 @endif">
                                 <a class="@if(last(request()->segments()) !== Str::slug($chapter)) hover:text-gem @endif" href="{{ '/'.$course.'/'.Str::slug($chapter) }}">{{ $chapter }}</a>
@@ -26,7 +26,7 @@
         </nav>
 
         @section('curriculum')
-            <nav class="md:hidden max-w-sm pt-8 text-lg">
+            <nav class="md:hidden max-w-sm pt-8 text-lg whitespace-normal">
                 <p class="px-4 text-siteLite dark:text-gray-400 font-semibold">Curriculum</p>
                 <ul>
                     @foreach($curriculum as $unit => $chapters)
@@ -44,7 +44,7 @@
             </nav>
         @endsection
 
-        <article>
+        <article class="w-full">
             @include($material)
         </article>
 
