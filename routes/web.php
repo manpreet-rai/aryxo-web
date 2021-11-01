@@ -1,9 +1,9 @@
 <?php
 
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 use App\Models\Subscriber;
+use App\Models\Certificate;
 use App\Models\Feedback;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Http;
@@ -34,15 +34,15 @@ Route::post('contact', function (Request $request){
 
     if ($response){
         Feedback::create(['name' => $request['name'], 'email'=>$request['email'], 'type'=>$request['type'], 'message'=>$request['message']]);
-        return redirect('/')->with('status', 'Your feedback has reached us. Thank you!');
+        return \redirect('/')->with('status', 'Your feedback has reached us. Thank you!');
     } else {
-        return redirect('/')->with('failure', 'Failed to send feedback. Please retry.');
+        return \redirect('/')->with('failure', 'Failed to send feedback. Please retry.');
     }
 });
 
 // Certification routes
 Route::get('certification', function (){
-   return redirect('certification/verify');
+   return \redirect('certification/verify');
 });
 Route::get('certification/verify', function (){
    return view('verify');
@@ -50,8 +50,7 @@ Route::get('certification/verify', function (){
 Route::post('certification/verify', function (Request $request){
     $pattern = '/\d{3}-\d{3}-\d{3}-\d{3}/';
     if (preg_match($pattern, $request['certid'])) {
-        $certificates = ["202-110-001-001", "202-110-002-001", "202-110-002-002", "202-110-002-003", "202-110-003-001", "202-110-004-001", "202-110-004-002", "202-110-005-001", "202-110-005-002"];
-        if (in_array($request['certid'], $certificates, true)){
+        if (Certificate::where('certid', $request['certid'])->exists()){
             return \redirect()->back()->with('success', $request['certid']);
         } else {
             return \redirect()->back()->with('failure', 'No certificate found for "'.$request['certid'].'"');
@@ -67,7 +66,7 @@ Route::post('/newsletter', function (Request $request){
         Subscriber::create(['email'=>$request['email'], 'token'=>Str::random(60)]);
     }
 
-    return redirect('/')->with('status', 'You have been added to our subscription list. Thank you!');
+    return \redirect('/')->with('status', 'You have been added to our subscription list. Thank you!');
 });
 
 // Curriculum routes
