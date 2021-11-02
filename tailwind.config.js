@@ -12,7 +12,8 @@ module.exports = {
             current: 'currentColor',
             site: '#001E26',
             siteLite: '#003543',
-            gem: '#379761'
+            gem: '#379761',
+            codeLite: '#FBFBFD'
         },
         transitionProperty: 'hover',
     },
@@ -24,5 +25,8 @@ module.exports = {
   },
   plugins: [
       require('tailwind-scrollbar'),
+      require("@tailwindcss/forms")({
+          strategy: 'class',
+      }),
   ],
 }
