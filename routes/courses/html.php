@@ -17,6 +17,7 @@ Route::get('html/introduction-to-html', function () {
     $contents = Yaml::parse(file_get_contents(resource_path('views/contents/html/introduction-to-html.yml')));
     return view('chapter', [
         'material' => 'courses.html.introduction-to-html',
+        'updated' => date('M j, Y', filemtime(resource_path('views/courses/html/introduction-to-html.blade.php'))),
         'course' => 'html',
         'curriculum' => $curriculum,
         'contents' => $contents,

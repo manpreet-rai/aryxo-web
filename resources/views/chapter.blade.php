@@ -3,6 +3,33 @@
 @section('custom-head')
     @include('scripts.custom-head')
 
+    <script>
+        function countWords(data) {
+            const regex = /[\w]+/g;
+            return ((data || '').match(regex) || []).length;
+        }
+
+        function updateStats(){
+            let updated = "{{ $updated }}";
+            let article = document.getElementById('article');
+
+            let readtime = document.createElement('p');
+            let stats = document.createTextNode(`${Math.round(countWords(article.innerText)/200)} min read • Last updated on ${updated}`);
+
+            readtime.setAttribute('class', 'text-gem dark:text-green-500 font-medium');
+            readtime.appendChild(stats);
+
+            article.insertBefore(readtime, article.children[1]);
+        }
+
+        document.addEventListener('readystatechange', event => {
+            if (event.target.readyState === "interactive") {
+                updateStats();
+            }
+        });
+
+    </script>
+
     <!-- ScrollMagic Script -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 @endsection
@@ -44,7 +71,7 @@
             </nav>
         @endsection
 
-        <article class="w-full">
+        <article id="article" class="w-full">
             @include($material)
         </article>
 

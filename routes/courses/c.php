@@ -17,6 +17,7 @@ Route::get('c/introduction-to-c', function () {
     $contents = Yaml::parse(file_get_contents(resource_path('views/contents/c/introduction-to-c.yml')));
     return view('chapter', [
         'material' => 'courses.c.introduction-to-c',
+        'updated' => date('M j, Y', filemtime(resource_path('views/courses/c/introduction-to-c.blade.php'))),
         'course' => 'c',
         'curriculum' => $curriculum,
         'contents' => $contents,
