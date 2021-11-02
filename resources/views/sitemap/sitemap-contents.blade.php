@@ -10,7 +10,7 @@
                 <a href="/sitemap" class="pb-2 w-full md:w-1/3 hover:text-gem">Sitemap</a>
             </div>
         </div>
-
+        
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
             <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">Courses</p>
             <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
@@ -23,7 +23,7 @@
                 <a href="/javascript" class="pb-2 w-full md:w-1/3 hover:text-gem">JS</a>
             </div>
         </div>
-
+        
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
             <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">C</p>
             <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
@@ -63,7 +63,7 @@
                 <a href="/c/math-operations" class="pb-2 w-full md:w-1/3 hover:text-gem">Math Operations</a>
             </div>
         </div>
-
+        
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
             <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">Python</p>
             <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
@@ -116,7 +116,7 @@
                 <a href="/python/operator-overloading" class="pb-2 w-full md:w-1/3 hover:text-gem">Operator Overloading</a>
             </div>
         </div>
-
+        
         <div class="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 pb-10">
             <p class="px-2 md:px-0 text-site dark:text-white text-xl font-semibold pb-2">HTML</p>
             <div class="px-2 md:px-0 text-siteLite dark:text-gray-300 font-medium flex flex-col md:flex-row flex-wrap">
@@ -125,68 +125,28 @@
                 <a href="/html/basic-tags" class="pb-2 w-full md:w-1/3 hover:text-gem">Basic Tags</a>
                 <a href="/html/document-type" class="pb-2 w-full md:w-1/3 hover:text-gem">Document Type</a>
                 <a href="/html/elements" class="pb-2 w-full md:w-1/3 hover:text-gem">Elements</a>
-                <a href="/html/core-attributes" class="pb-2 w-full md:w-1/3 hover:text-gem">Core Attributes</a>
-                <a href="/html/special-attributes" class="pb-2 w-full md:w-1/3 hover:text-gem">Special Attributes</a>
-                <a href="/html/generic-attributes" class="pb-2 w-full md:w-1/3 hover:text-gem">Generic Attributes</a>
+                <a href="/html/data-attributes" class="pb-2 w-full md:w-1/3 hover:text-gem">Data Attributes</a>
                 <a href="/html/style" class="pb-2 w-full md:w-1/3 hover:text-gem">Style</a>
                 <a href="/html/fonts" class="pb-2 w-full md:w-1/3 hover:text-gem">Fonts</a>
-                <a href="/html/text-size" class="pb-2 w-full md:w-1/3 hover:text-gem">Text Size</a>
-                <a href="/html/text-alignment" class="pb-2 w-full md:w-1/3 hover:text-gem">Text Alignment</a>
-                <a href="/html/background-color" class="pb-2 w-full md:w-1/3 hover:text-gem">Background Color</a>
-                <a href="/html/text-color" class="pb-2 w-full md:w-1/3 hover:text-gem">Text Color</a>
-                <a href="/html/bold" class="pb-2 w-full md:w-1/3 hover:text-gem">Bold</a>
-                <a href="/html/italic" class="pb-2 w-full md:w-1/3 hover:text-gem">Italic</a>
-                <a href="/html/underline" class="pb-2 w-full md:w-1/3 hover:text-gem">Underline</a>
-                <a href="/html/strike" class="pb-2 w-full md:w-1/3 hover:text-gem">Strike</a>
-                <a href="/html/insert" class="pb-2 w-full md:w-1/3 hover:text-gem">Insert</a>
-                <a href="/html/delete" class="pb-2 w-full md:w-1/3 hover:text-gem">Delete</a>
-                <a href="/html/highlighting" class="pb-2 w-full md:w-1/3 hover:text-gem">Highlighting</a>
-                <a href="/html/subscript-and-superscript" class="pb-2 w-full md:w-1/3 hover:text-gem">Subscript and Superscript</a>
-                <a href="/html/abbreviation" class="pb-2 w-full md:w-1/3 hover:text-gem">Abbreviation</a>
-                <a href="/html/larger-and-smaller-text" class="pb-2 w-full md:w-1/3 hover:text-gem">Larger and Smaller text</a>
+                <a href="/html/text-formatting" class="pb-2 w-full md:w-1/3 hover:text-gem">Text Formatting</a>
                 <a href="/html/text-links" class="pb-2 w-full md:w-1/3 hover:text-gem">Text Links</a>
                 <a href="/html/image-links" class="pb-2 w-full md:w-1/3 hover:text-gem">Image Links</a>
                 <a href="/html/email-links" class="pb-2 w-full md:w-1/3 hover:text-gem">Email Links</a>
                 <a href="/html/ordered" class="pb-2 w-full md:w-1/3 hover:text-gem">Ordered</a>
                 <a href="/html/unordered" class="pb-2 w-full md:w-1/3 hover:text-gem">Unordered</a>
-                <a href="/html/nested" class="pb-2 w-full md:w-1/3 hover:text-gem">Nested</a>
-                <a href="/html/description" class="pb-2 w-full md:w-1/3 hover:text-gem">Description</a>
-                <a href="/html/table" class="pb-2 w-full md:w-1/3 hover:text-gem">Table</a>
-                <a href="/html/table-sizes" class="pb-2 w-full md:w-1/3 hover:text-gem">Table Sizes </a>
-                <a href="/html/table-headers" class="pb-2 w-full md:w-1/3 hover:text-gem">Table Headers</a>
-                <a href="/html/paddings-and-spacing" class="pb-2 w-full md:w-1/3 hover:text-gem">Paddings and Spacing</a>
-                <a href="/html/colspan-and-rowspan" class="pb-2 w-full md:w-1/3 hover:text-gem">Colspan and Rowspan</a>
-                <a href="/html/table-borders" class="pb-2 w-full md:w-1/3 hover:text-gem">Table Borders</a>
-                <a href="/html/inserting-images" class="pb-2 w-full md:w-1/3 hover:text-gem">Inserting Images</a>
-                <a href="/html/image-map" class="pb-2 w-full md:w-1/3 hover:text-gem">Image Map</a>
-                <a href="/html/background-images" class="pb-2 w-full md:w-1/3 hover:text-gem">Background Images</a>
-                <a href="/html/inline-style-sheets" class="pb-2 w-full md:w-1/3 hover:text-gem">Inline Style Sheets</a>
-                <a href="/html/embedded-style-sheets" class="pb-2 w-full md:w-1/3 hover:text-gem">Embedded Style Sheets</a>
-                <a href="/html/external-style-sheets" class="pb-2 w-full md:w-1/3 hover:text-gem">External Style Sheets</a>
+                <a href="/html/table" class="pb-2 w-full md:w-1/3 hover:text-gem">Table </a>
+                <a href="/html/padding-and-spacing" class="pb-2 w-full md:w-1/3 hover:text-gem">Padding and Spacing</a>
+                <a href="/html/row-and-colspan" class="pb-2 w-full md:w-1/3 hover:text-gem">Row and Colspan</a>
+                <a href="/html/image-insertion-and-mapping" class="pb-2 w-full md:w-1/3 hover:text-gem">Image insertion and Mapping</a>
+                <a href="/html/types-of-stylesheets" class="pb-2 w-full md:w-1/3 hover:text-gem">Types of Stylesheets</a>
                 <a href="/html/class-attribute" class="pb-2 w-full md:w-1/3 hover:text-gem">Class Attribute</a>
-                <a href="/html/multiple-classes" class="pb-2 w-full md:w-1/3 hover:text-gem">Multiple Classes</a>
                 <a href="/html/id-attribute" class="pb-2 w-full md:w-1/3 hover:text-gem">Id Attribute</a>
-                <a href="/html/text" class="pb-2 w-full md:w-1/3 hover:text-gem">Text</a>
-                <a href="/html/color" class="pb-2 w-full md:w-1/3 hover:text-gem">Color</a>
-                <a href="/html/button" class="pb-2 w-full md:w-1/3 hover:text-gem">Button</a>
-                <a href="/html/checkbox-and-radio-buttons" class="pb-2 w-full md:w-1/3 hover:text-gem">Checkbox and Radio Buttons</a>
-                <a href="/html/input-validation" class="pb-2 w-full md:w-1/3 hover:text-gem">Input Validation</a>
-                <a href="/html/password" class="pb-2 w-full md:w-1/3 hover:text-gem">Password</a>
-                <a href="/html/file" class="pb-2 w-full md:w-1/3 hover:text-gem">File</a>
-                <a href="/html/reset" class="pb-2 w-full md:w-1/3 hover:text-gem">Reset</a>
-                <a href="/html/submit" class="pb-2 w-full md:w-1/3 hover:text-gem">Submit</a>
-                <a href="/html/number" class="pb-2 w-full md:w-1/3 hover:text-gem">Number</a>
-                <a href="/html/range" class="pb-2 w-full md:w-1/3 hover:text-gem">Range</a>
-                <a href="/html/search" class="pb-2 w-full md:w-1/3 hover:text-gem">Search</a>
-                <a href="/html/date-and-time" class="pb-2 w-full md:w-1/3 hover:text-gem">Date and Time</a>
+                <a href="/html/control-elements" class="pb-2 w-full md:w-1/3 hover:text-gem">Control Elements</a>
                 <a href="/html/form-attributes" class="pb-2 w-full md:w-1/3 hover:text-gem">Form Attributes</a>
                 <a href="/html/form-elements" class="pb-2 w-full md:w-1/3 hover:text-gem">Form Elements</a>
-                <a href="/html/input-types-and-attributes" class="pb-2 w-full md:w-1/3 hover:text-gem">Input Types and Attributes</a>
-                <a href="/html/iframe" class="pb-2 w-full md:w-1/3 hover:text-gem">IFrame</a>
-                <a href="/html/setting-the-frame-size" class="pb-2 w-full md:w-1/3 hover:text-gem">Setting the Frame Size</a>
-                <a href="/html/iframe-as-link-target" class="pb-2 w-full md:w-1/3 hover:text-gem">IFrame as Link Target</a>
+                <a href="/html/iframe-and-link-target" class="pb-2 w-full md:w-1/3 hover:text-gem">IFrame and Link Target</a>
             </div>
         </div>
-
+        
     </div>
 @endsection

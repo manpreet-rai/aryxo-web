@@ -9,29 +9,14 @@
         "Elements"
     ],
     "Attributes": [
-        "Core Attributes",
-        "Special Attributes",
-        "Generic Attributes"
+        "Data Attributes"
     ],
     "Style": [
         "Style",
-        "Fonts",
-        "Text Size",
-        "Text Alignment",
-        "Background Color",
-        "Text Color"
+        "Fonts"
     ],
     "Formats": [
-        "Bold",
-        "Italic",
-        "Underline",
-        "Strike",
-        "Insert",
-        "Delete",
-        "Highlighting",
-        "Subscript and Superscript",
-        "Abbreviation",
-        "Larger and Smaller text"
+        "Text Formatting"
     ],
     "Links": [
         "Text Links",
@@ -40,56 +25,31 @@
     ],
     "Lists": [
         "Ordered",
-        "Unordered",
-        "Nested",
-        "Description"
+        "Unordered"
     ],
     "Table": [
-        "Table",
-        "Table Sizes ",
-        "Table Headers",
-        "Paddings and Spacing",
-        "Colspan and Rowspan",
-        "Table Borders"
+        "Table ",
+        "Padding and Spacing",
+        "Row and Colspan"
     ],
     "Images": [
-        "Inserting Images",
-        "Image Map",
-        "Background Images"
+        "Image insertion and Mapping"
     ],
     "Style Sheets": [
-        "Inline Style Sheets",
-        "Embedded Style Sheets",
-        "External Style Sheets"
+        "Types of Stylesheets"
     ],
     "Classes and IDs": [
         "Class Attribute",
-        "Multiple Classes",
         "Id Attribute"
     ],
     "Input Control Elements": [
-        "Text",
-        "Color",
-        "Button",
-        "Checkbox and Radio Buttons",
-        "Input Validation",
-        "Password",
-        "File",
-        "Reset",
-        "Submit",
-        "Number",
-        "Range",
-        "Search",
-        "Date and Time"
+        "Control Elements"
     ],
     "Forms": [
         "Form Attributes",
-        "Form Elements",
-        "Input Types and Attributes"
+        "Form Elements"
     ],
     "IFrames": [
-        "IFrame",
-        "Setting the Frame Size",
-        "IFrame as Link Target"
+        "IFrame and Link Target"
     ]
 }
