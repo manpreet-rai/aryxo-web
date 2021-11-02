@@ -26,7 +26,7 @@
 <p class="paragraph">This is the <strong>latest version</strong> of HTML. It was published in <strong>2012</strong>, which is an extended version of HTML 4.01.</p>
 <p class="paragraph">It also added the ability to create applications that function offline.</p>
 <h2 id="web-browser" class="heading">Web Browser</h2>
-<p class="paragraph">A web browser is a application software used to access information on the WWW (World Wide Web), or in simple words an application that takes you anywhere on the internet world to access documents.</p>
+<p class="paragraph">A web browser is an application software used to access information on the WWW (World Wide Web), or in simple words an application that takes you anywhere on the internet world to access documents.</p>
 <h2 id="features" class="heading">Features</h2>
 <p class="paragraph">HTML is the simplest and productive language made up of elements, which are applied to text portions to give them a completely different meaning in a Document. These elements mention how to display the content on the web browsers.</p>
 <ul class="numbers inside">
